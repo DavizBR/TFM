@@ -1,0 +1,489 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - adios
+  - gracias
+  - bot_challenge
+  - about_museo
+  - horario
+  - duracion
+  - precios
+  - gratuita
+  - entradas
+  - contacto
+  - direccion
+  - guiadas
+  - publico
+  - afluencia
+  - fotos
+  - normas
+  - tienda
+  - cafeteria
+  - edificio
+  - financiacion
+  - apertura
+  - colecciones
+  - actividades
+  - virtual
+  - plano
+  - boletin
+  - vida
+  - juventud
+  - italia
+  - madrid
+  - enfermedad
+  - guerra
+  - nacimiento
+  - muerte
+  - quinta
+  - familia
+  - legado
+  - obra
+  - tecnica
+  - grabados
+  - velazquez
+  - esopo
+  - olivares
+  - carlos
+  - caprichos
+  - abuelo
+  - tu
+  - razon
+  - brabisimo
+  - desastres
+  - pensamientos
+  - niporesas
+  - verdad
+  - tauromaquia
+  - juanito
+  - desgracias
+  - pepe
+  - disparates
+  - femenino
+  - miedo
+  - volante
+  - burdeos
+  - partida
+  - diversion
+  - americano
+  - pinturas
+  - gloria
+  - joaquin
+  - autorretrato
+  - menipo
+  - cistue
+  - parma
+  - azara
+  - mamelucos
+  - baile
+  - abierto
+  - informacion_cuadro
+  - calcular
+  - log
+
+actions:
+  - action_abierto
+  - action_informacion_cuadro
+  - action_calcular_precio
+  - action_logs
+
+entities:
+  - cuadro_goya
+  - numero
+
+responses:
+
+  utter_saludo:
+  - text: "¡Hola, soy FR∀N! El chatbot del museo\n¿En qué puedo ayudarle?"
+  - text: "Le doy la bienvenida al chat del museo, soy FR∀N.\n¿En qué puedo ayudarle?"
+    buttons:   
+      - title: Información
+        payload: /about_museo
+      - title: Goya
+        payload: /vida
+      - title: Obras
+        payload: /obra
+
+  utter_did_that_help:
+  - text: "¿Te he ayudado?"
+
+  utter_gracias:
+  - text: "No hay de qué. Estoy encantado de poder ayudar."
+    buttons:   
+      - title: Adiós
+        payload: /adios
+      - title: Otra consulta
+        payload: /saludo
+
+  utter_adios:
+  - text: "Agradezco el tiempo que me ha dedicado. Que tenga un buen día. "
+
+  utter_bot_challenge:
+  - text: "Estás hablando con el chatbot del museo, Francho."
+  - text: "Soy Francho, el chatbot del museo."
+
+  utter_about_museo:
+  - text: "El museo cuenta con una rica colección de pinturas y grabados de Francisco de Goya que abarcan diferentes etapas de su carrera artística, ofreciendo una visión completa del estilo y técnica del pintor zaragozano.\n\nTambién podrá encontrar exposiciones temporales y actividades culturales."
+    buttons:   
+      - title: Horario
+        payload: /horario
+      - title: Entradas
+        payload: /precios
+      - title: Ubicación
+        payload: /direccion
+      - title: Normas
+        payload: /normas
+      - title: Colecciones
+        payload: /colecciones
+      - title: Contacto
+        payload: /contacto
+
+  utter_horario:
+  - text: "El horario del museo es el siguiente:\n\n🕙 10:00 - 18:00 (M-V).\n\n🕙 10:00 - 14:00 (domingos y festivos).\n\n🔒 El museo cierra todos los lunes del año, así como los días 25 de diciembre y 1 y 6 de enero.\n\n❗El horario de taquilla finaliza 20 minutos antes de que cierre el museo."
+    buttons:
+      - title: Disponibilidad
+        payload: /abierto
+
+
+  utter_duracion:
+  - text: "La duración estimada de la visita libre al museo es de una hora. La visita guiada ronda la hora y media."
+ 
+  utter_precios:
+  - text: "La entrada general es de 8€ por persona.\n\nExiste una entrada reducida para:\n\n● mayores de 65 años\n\n● menores de 18 años\n\n● grupos de centros educativos\n\n● parados\n\n● Carné Joven, CJ Visa Electron o CJ Internacional.\n\nLas visitas en grupo (10 - 25 personas) cuestan 6€ por persona."
+    buttons:   
+      - title: Comprar
+        payload: /entradas
+      - title: Entrada gratuita
+        payload: /gratuita
+
+  utter_gratuita:
+  - text: "La entrada es gratuita para:\n● menores de 12 años\n● personas con +33% de discapacidad y su acompañante (si es imprescindible).\n\nSerá gratuita para el público general:\n● El primer miércoles de cada mes\n● El 29 de enero (San Valero)\n● El 5 de marzo (Cincomarzada)\n● El 23 de abril (San Jorge)\n● El 18 de mayo (Día de los Museos)."
+
+  utter_entradas:
+  - text: "Puede comprar las entradas presencialmente en taquilla u [online](https://www.fundacionibercaja.es/usuarios/compra-entradas/Entrada-Museo-Goya).\n\nLe recuerdo que la taquilla cierra 20 minutos antes que el museo. Si va a comprar una entrada reducida, acuérdese de llevar la acreditación pertinente."
+
+  utter_contacto:
+  - text: "📞Teléfono (+34) 535 353 456\n\n📧Correo: museofranciscodegoya@aragoncultura.es\n\n📠Fax: (+34) 976 303 164"
+
+  utter_direccion:
+  - text: "Encontrará el museo en la Calle de Espoz y Mina, número 23 (CP 50003).📍\nEstá ubicado en la ciudad de Zaragoza, Aragón (España)."
+
+  utter_guiadas:
+  - text: "Se ofrecen tres tipos de visitas guiadas:\n\n1. Adultos: de 10 a 25 personas (6€ por persona).\n\n2. Grupos con guía propio: 7€ por persona.\n\n3. Centros educativos: para más información sobre este tipo de visita llame al 535 353 456 o escriba a museofranciscodegoya@aragoncultura.es."
+
+  utter_publico:
+  - text: "El museo está enfocado al público general, independientemente de su conocimiento previo en arte e historia.\n\nEn el año 2022 se registraron más de 100.000 visitas al museo, una cifra récord que alberga tanto visitantes nacionales como turistas internacionales."
+  
+  utter_afluencia:
+  - text: "El museo es de los más concurridos de Zaragoza. En el año 2022 se registraron más de 100.000 visitas según informó El Heraldo de Aragón, todo un récord histórico que dobla las cifras del año 2021."
+
+  utter_fotos:
+  - text: "Las fotografías o filmaciones no están permitidas en el museo. No podrá utilizar la cámara o el teléfono móvil durante la visita."
+    buttons:   
+      - title: Normas
+        payload: /normas
+
+  utter_normas:
+  - text: "El museo cuenta con una serie de normas de obligado cumplimiento:\n\n1. Está prohibido tocar, filmar o fotografiar las obras.\n\n2. Está prohibido el uso del teléfono móvil.\n\n3. No se permite el acceso con paraguas, mochilas o cascos de moto (hay taquillas).\n\n4. Los niños deberán ir acompañados por adultos.\n\n5. No está permitida la entrada de animales, salvo perros guía.\n\n6. Está prohibido fumar o introducir alimentos."
+
+  utter_tienda:
+  - text: "El museo dispone de una tienda de regalos que puede visitarse al final de la visita."
+
+  utter_cafeteria:
+  - text: "El museo no dispone de cafetería. Además, se prohíbe el acceso con comida o bebida."
+
+  utter_edificio:
+  - text: "El museo se aloja en la [casa palacio de los Pardo](https://www.zaragoza.es/contenidos/servicios-sociales/personas-mayores/reactivate/Pardo.pdf), construida en 1535 en pleno Renacimiento aragonés."
+
+  utter_financiacion:
+  - text: "El museo no está financiado con dinero público."
+
+  utter_apertura:
+  - text: "El museo abrió sus puertas el 25 de febrero de 2015."
+
+  utter_colecciones:
+  - text: "El museo alberga una rica variedad de piezas artísticas a su disposición:\n\nLa [colección de Goya](https://museogoya.fundacionibercaja.es/goya-en-zaragoza.php)\n\nLas [15 obras esenciales] (https://museogoya.fundacionibercaja.es/15-esenciales.php)\n\nLas [48 obras destacadas] (https://museogoya.fundacionibercaja.es/48-destacados.php)\n\nTambién puede encontrar información sobre la [exposición temporal] (https://museogoya.fundacionibercaja.es/exposicion-actual.php)"
+
+  utter_actividades:
+  - text: "El museo ofrece diversas [actividades](https://museogoya.fundacionibercaja.es/actividades-educativas.php) culturales dirigidas tanto a niños como a adultos."
+
+  utter_virtual:
+  - text: "El museo pone a su disposición una <a href='https://museogoya.fundacionibercaja.es/visita-virtual.php'>visita virtual</a> gratuita."
+
+  utter_plano:
+  - text: "El museo cuenta con un total de 5 plantas.\n\nPonemos a  su disposición un [plano](https://museogoya.fundacionibercaja.es/itinerario-recomendado.php) del museo para que conozca el recorrido recomendado para su visita."
+
+  utter_boletin:
+  - text: "El museo dispone de un boletín dedicado al estudio e investigación de la Historia del Arte."
+
+  utter_vida:
+  - text: "Francisco de Goya (1746-1828), pintor y grabador español, fue considerado uno de los grandes maestros de la pintura. Su obra es muy variada, encontrando desde retratos y escenas de la vida cotidiana hasta obras de carácter político y social donde la crítica y la sátira cobran protagonismo. Vivió en una época de grandes cambios en España, desde el final del período ilustrado hasta los turbulentos años de la guerra y la ocupación francesa. Se le considera precursor del arte moderno y un referente para muchos artistas.\n\nSu vida puede dividirse en 5 grandes etapas:"
+    buttons:   
+      - title: Vida temprana
+        payload: /juventud
+      - title: Viaje a Italia
+        payload: /italia
+      - title: Éxito en Madrid
+        payload: /madrid
+      - title: Crisis y enfermedad
+        payload: /enfermedad
+      - title: Guerra y exilio
+        payload: /guerra
+
+  utter_juventud:
+  - text: "Francisco de Goya nació el 30 de marzo de 1746 en Fuendetodos, un pequeño pueblo cerca de Zaragoza. Su madre era parte de la hidalguía rural aragonesa, mientras que su su padre, de oficio dorador, pertenecía a la clase trabajadora. La familia de Goya se trasladó a Zaragoza cuando era joven, y allí pasó la mayor parte de su juventud.\n\nDesde temprana edad, Goya mostró inclinaciones artísticas y su familia las alentó. Recibió su primera formación artística del pintor José Luzán Martínez, en la recién fundada Academia de Dibujo de Zaragoza. Luzán, que había estudiado con pintores napolitanos, tuvo una influencia significativa en Goya y le enseñó a copiar estampas. Después de tres años de estudios con Luzán, Goya solicitó una pensión en la Real Academia de Bellas Artes de San Fernando en Madrid, pero no tuvo éxito.\n\nDurante este período en Zaragoza, Goya también comenzó a recibir encargos locales para pintar frescos y cuadros religiosos. Uno de sus encargos más importantes fue pintar los frescos de la bóveda del Coreto en la basílica del Pilar, así como las pechinas de la iglesias de Muel y Remolinos y lienzos para la capilla del palacio del conde de Sobradiel."
+
+  utter_italia:
+  - text: "En 1770, Goya emprendió un viaje a Italia. Su objetivo era mejorar su técnica y adquirir mayor comprensión de las corrientes artísticas italianas.\n\nDurante su estancia en Italia, Goya pasó la mayor parte del tiempo en Roma, la cuna del arte clásico y renacentista.\n\nEstudió y copió las obras de los grandes maestros italianos y realizó numerosos dibujos de esculturas y monumentos romanos, absorbiendo las técnicas y estilos de la antigüedad clásica.\n\nEsta experiencia influyó en la evolución artística de Goya, permitiéndole experimentar con diferentes técnicas, composiciones y estilos, así como a valorar el colorido, la luz.\n\nCuriosidad: participó en un concurso organizado por la Academia de Parma con el cuadro de 'Aníbal cruzando los Alpes' y, aunque no ganó, recibió elogios por su capacidad para expresar emociones y su habilidad en la pincelada. Regresó a Zaragoza en 1771."
+
+  utter_madrid:
+  - text: "A partir de su regreso a Madrid en 1775, Goya comenzó a ganar reconocimiento y éxito en la corte española y fue nombrado pintor del rey Carlos III, proporcionándole contactos con la aristocracia de la época.\n\nRecibió numerosos encargos para retratar a la familia real y a la alta sociedad. Sus retratos se caracterizaban por su habilidad para capturar la personalidad y la psicología de los individuos, así como por su estilo realista y detallado.\n\n Entre 1798 y 1799 pintó los frescos en la ermita de San Antonio de la Florida, demostrando su dominio de la técnica, así como su capacidad para crear composiciones dinámicas y expresivas.\n\nLos duques de Osuna, una influyente pareja de la nobleza española, se convirtieron en mecenas y protectores de Goya. A través de su patrocinio, recibió numerosos encargos, tanto retratos como pinturas decorativas y tuvo la oportunidad de experimentar y expresarse artísticamente con mayor libertad."
+
+  utter_enfermedad:
+  - text: "En 1792, Goya sufrió una grave enfermedad que lo dejó postrado en cama durante dos meses. Esta enfermedad, conocida como el cólico de Madrid, fue posiblemente causada por la contaminación metálica en la preparación de alimentos y el uso de plomo en barnices y soldaduras. Aunque se recuperó, la enfermedad dejó secuelas en su salud y quedó irremediablemente sordo.\n\nLa sordera le aisló cada vez más y experimentó dificultades para comunicarse, teniendo que recurrir a la escritura. El sentimiento de angustia derivó en una visión más pesimista del mundo, que se reflejó en su pintura.\n\nSus obras comenzaron a mostrar una mayor introspección y un sentido de lo grotesco y lo sombrío. Su paleta de colores se volvió más oscura y sus temas se centraron en la violencia, la locura y los horrores de la guerra.\n\nDurante su estancia en la Quinta del Sordo, su casa de campo en las afueras de Madrid, pintó una serie de obras conocidas como las Pinturas Negras, que decoraban las paredes de su casa y presentaban escenas perturbadoras.\n\nA pesar de sus problemas de salud, continuó experimentando con nuevas técnicas y estilos artísticos. Esta práctica derivó en la serie de grabados conocidos como los 'Disparates', de temática surrealista."
+
+  utter_guerra:
+  - text: "Durante la Guerra de la Independencia española (1808-1814), Goya se vio directamente afectado por el conflicto. Simpatizaba con la causa liberal y apoyó la Constitución de Cádiz, que buscaba establecer un gobierno constitucional en España. Durante este período, creó obras como El dos de mayo y Los fusilamientos del tres de mayo, que representaban los eventos y la brutalidad de la guerra.\n\nMantuvo amistades cercanas con figuras liberales y reformistas de la época que influyeron en que su arte se volviera más político y crítico.\n\nDurante la década de 1810, Goya comenzó a grabar una serie de 80 estampas conocidas como los Desastres de la guerra, imágenes impactantes y críticas de las atrocidades de la guerra que se publicarían de manera póstuma.\n\nTras el fin de la Guerra de la Independencia y la vuelta del absolutismo bajo el reinado de Fernando VII se exilió a Burdeos (Francia), donde continuó explorando nuevas técnicas y estilos, como la litografía y las miniaturas sobre marfil.\n\nGoya murió el 16 de abril de 1828 en Burdeos a los 82 años, dejando un enorme legado que perdura hasta el día de hoy."
+
+  utter_nacimiento:
+  - text: "Francisco de Goya nació en Fuendetodos (Zaragoza) el 30 de marzo de 1746."
+
+  utter_muerte:
+  - text: "Francisco de Goya falleció el 16 de abril de 1828 en Burdeos (Francia) por causas desconocidas."
+
+  utter_quinta:
+  - text: "La Quinta del Sordo fue la casa de campo propiedad de Francisco de Goya, ubicada en las afueras de Madrid. Goya adquirió la propiedad en 1819 con 73 años de edad, y vivió allí hasta su exilio en Francia en 1824.\n\nEs conocida por ser el lugar donde Goya creó las Pinturas Negras, que decoraban las paredes de la casa.\n\nEstas pinturas reflejan el estado de ánimo y la visión pesimista de Goya marcado por su enfermedad, su sordera y los eventos políticos y sociales turbulentos de la época. La oscuridad y la violencia presentes en estas obras capturan el lado más sombrío y grotesco de la condición humana.\n\nDespués de su muerte, la Quinta del Sordo cambió de propietarios varias veces y sufrió modificaciones significativas. Aunque la casa original ya no existe, las pinturas que Goya creó durante su estancia allí siguen siendo una parte importante de su legado artístico y se consideran algunas de sus obras más impactantes y relevantes."
+
+  utter_familia:
+  - text: "La familia de Goya está formada por:\n\n- José Benito de Goya y Gracia y María Lucientes y Salvador (padres).\n\n- Josefa Bayeu y Subías (esposa), con quien contrajo matrimonio el 25 de julio de 1773.\n\n- Francisco Javier Pedro (hijo), el único de sus hermanos que llegó a edad adulta.\n\n- Mariano Goya y Goicoechea (nieto), heredero de la Quinta del Sordo."
+  
+  utter_legado:
+  - text: "El legado de Francisco de Goya es vasto y significativo, tanto en términos de su impacto en el arte como en su influencia en la conciencia social y política.\n\nFue un artista innovador que exploró diversas técnicas y estilos a lo largo de su carrera. Experimentó con la pintura al óleo, el grabado, la litografía y el dibujo, entre otros medios. Su dominio de la técnica y su capacidad para transmitir emociones y narrativas a través de su arte lo convirtieron en uno de los artistas más destacados de su tiempo.\n\nDestacó por su enfoque realista y su habilidad para capturar la condición humana en toda su complejidad. Sus obras reflejan tanto la belleza como la brutalidad de la vida, y se adentran en los aspectos oscuros y perturbadores de la existencia humana. Su uso del claroscuro, el juego de luces y sombras, y su técnica suelta y expresiva sentaron las bases para el desarrollo del arte moderno.\n\nA través de su arte, Goya abordó temas sociales y políticos de su tiempo. Sus obras reflejan la guerra, la opresión, la injusticia y la desigualdad social.\n\nGoya es considerado uno de los artistas más importantes de la historia del arte español. Su obra representa un período crucial en la historia de España, capturando los eventos y las tensiones de su tiempo. Además de su valor artístico, sus pinturas y grabados son un testimonio histórico y cultural que ofrece una visión única de la vida y la sociedad en el siglo XVIII y principios del XIX."
+
+  utter_obra:
+  - text: "La obra de Goya destaca por su habilidad técnica, su expresividad emocional y su aguda observación de la sociedad bajo un enfoque realista. Su capacidad para explorar tanto lo sublime como lo grotesco lo convierten en uno de los artistas más influyentes de su época. Su obra puede clasificarse en:\n\n☞ Retratos de la nobleza.\n\n☞ Sucesos históricos.\n\n☞ Escenas de la vida cotidiana y fiestas populares.\n\n☞ Grabados satíricos.\n\n☞ Pinturas Negras."
+    buttons:   
+      - title: Grabados
+        payload: /grabados
+      - title: Pinturas
+        payload: /pinturas
+
+  utter_tecnica: 
+  - text: "Goya dominaba diversas técnicas artísticas, pero es más conocido por su dominio de la pintura al óleo y el grabado.\nUtilizaba pinceladas sueltas y audaces en sus pinturas, lo que le permitía crear contrastes de luces y sombras para transmitir emociones y expresar sus ideas. \nEn sus grabados, empleaba principalmente la técnica del aguafuerte, que consiste en grabar sobre una plancha de metal cubierta de ácido para luego imprimir las imágenes."
+
+  utter_grabados:
+  - text: "Los grabados de Goya son de las obras más conocidas del artista aragonés.\nGoya recurría a la técnica del aguafuerte, que consiste en cubrir una plancha de metal con barniz resistente al ácido, dibujar sobre él, sumergir la plancha en ácido para corroer las áreas expuestas y luego aplicar tinta y transferirla a papel mediante una prensa de impresión.\nSon seis las series de grabados de Goya:"
+    buttons:   
+      - title: Los Caprichos
+        payload: /caprichos
+      - title: Los Desastres de la guerra
+        payload: /desastres
+      - title: La Tauromaquia
+        payload: /tauromaquia
+      - title: Los Disparates
+        payload: /disparates
+      - title: Copias de Velázquez
+        payload: /velazquez
+      - title: Toros de Burdeos
+        payload: /burdeos
+
+  utter_velazquez:
+  - text: "Las Copias de Velázquez (anunciados en 1778 en La Gaceta de Madrid)son una serie de grabados de Goya que reproducen las obras de Velázquez. Se desconoce la motivación de Goya, pero se especula que quiso prevenir una posible pérdida de obras maestras en España, aunque quizá fue por mera admiración. Con esta serie, Goya experimenta con una técnica nueva y compleja (el aguafuerte), fatigosa para el pulso y para la vista. En el museo destacan tres. Para más información, elija uno:"
+    buttons:   
+      - title: Esopo
+        payload: /esopo
+      - title: Duque de Olivares
+        payload: /olivares
+      - title: Príncipe Carlos
+        payload: /carlos
+
+  utter_esopo:
+  - text: "ESOPO\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte.\n\nAño: 1788.\n\nDescripción: El nombre AESOPVS está grabado en la estampa en la esquina superior derecha. En un estado previo aparecen también Diego Velazquez y las iniciales FG, que fueron añadidas en la parte baja, en los ángulos inferiores izquierdo y derecho. Posteriormente fueron borrados, cuando el título se grabó para la primera edición..\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/esopo.jpg
+
+  utter_olivares:
+  - text: "DUQUE DE OLIVARES\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte.\n\n🗓️ Año: 1788.\n\nDescripción: El retrato ecuestre del conde duque de Olivares, posiblemente obra de Velázquez entre 1632 y 1633 tras su viaje a Italia, muestra a don Gaspar de Guzmán sobre un caballo en corveta, destacando su gesto decidido hacia una batalla en el fondo.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/Retrato-Ecuestre-de-Gaspar-de-Guzman,-Conde-Duque-de-Olivares-2506.jpg
+
+  utter_carlos:
+  - text: "PRÍNCIPE DE ESPAÑA\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte y punta seca.\n\n🗓️ Año: 1788.\n\nDescripción: Velázquez pintó al príncipe Baltasar Carlos a caballo para el Salón de los Reinos del palacio del Buen Retiro, mostrándolo como un niño de seis años en traje de general, sosteniendo una bengala y las riendas. Goya copió la obra con fidelidad, mejorando incluso el caballo, pero modificó el paisaje y resaltó la expresión despierta del príncipe en su grabado.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/Retrato%20Ecuestre%20del%20Pr%C3%ADncipe%20Baltasar%20Carlos2.jpg
+
+  utter_caprichos:
+  - text: "La serie de grabados 'Los Caprichos' de Goya, con ochenta estampas publicadas en 1799, refleja la crítica social y la sátira en la España de ese tiempo. Goya, influido por círculos intelectuales en Madrid, utiliza elementos populares, literarios y sucesos contemporáneos para ridiculizar vicios y defectos sociales como la superstición, la incompetencia política y la hipocresía. La serie también aborda la Inquisición y la brujería, consolidando la reputación de Goya como grabador.\nEn el museo destacan cuatro grabados. Elija uno:"
+    buttons:   
+      - title: Hasta su abuelo
+        payload: /abuelo
+      - title: Tú que no puedes
+        payload: /tu
+      - title: El sueño de la razón
+        payload: /razon
+      - title: Brabisimo
+        payload: /brabisimo
+
+  utter_abuelo:
+  - text: "HASTA SU ABUELO\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguatinta.\n\n🗓️ Año: 1799.\n\nDescripción: La obra presenta un asno vestido y de pie en el centro, con un libro en un atril que muestra ancestros de burros y un escudo de armas abajo. Al fondo, un búho se recorta. Goya critica la búsqueda de orígenes nobles por parte de la aristocracia en el siglo XVIII, satirizando la costumbre de buscar títulos nobiliarios sin ocupación real. El asno representa esta búsqueda en un contexto humorístico y crítico.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/asta-su-abuelo.jpg
+
+  utter_tu:
+  - text: "TU QUE NO PUEDES\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte y aguatinta bruñida.\n\n🗓️ Año: 1779.\n\nDescripción: Goya representó a dos robustos y satisfechos asnos que aparecen subidos sobre las espaldas de dos pobres campesinos, cuyos rostros muestran cansancio y sufrimiento. Goya hace una dura crítica social contra la nobleza, ociosa e improductiva, que vivía de las rentas obtenidas de sus propiedades agrarias y de los derechos feudales, que suponían duras cargas para los campesinos. Además, sobre éstos y el resto de los no privilegiados, recaían los impuestos y contribuciones del Estado, de los que estaban exentos la nobleza y el clero.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/Tu-que-no-puedes.jpg
+
+  utter_razon:
+  - text: "EL SUEÑO DE LA RAZÓN PRODUCE MONSTRUOS\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte y aguatinta.\n\n🗓️ Año: 1779.\n\nDescripción: Este grabado es uno de los más complejos y ricos de la serie, con diversas interpretaciones. Los manuscritos contemporáneos, como el de Ayala, señalan que 'La fantasía abandonada de la razón produce monstruos, y unida con ella es la madre de las artes'. Goya resalta la importancia de la razón para evitar emociones irracionales y la ignorancia, siendo la luz que nos saca de la oscuridad del subconsciente y los miedos. No obstante, en los manuscritos se sugiere otro significado: el sueño, como liberación del mundo interior controlado por la razón, se convierte en una fuente de creatividad inmensa.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/El-sue%C3%B1o-de-la-raz%C3%B3n-produce-monstruos.jpg
+
+  utter_brabisimo:
+  - text: "BRABISIMO!\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte, aguatinta bruñida y punta seca.\n\n🗓️ Año: 1779.\n\nDescripción: El título del grabado satírico es irónico, burlándose del burro que observa un concierto ficticio en el que el mono no toca la guitarra. Goya critica a aquellos que fingen disfrutar de la música para aparentar ser melómanos, pero en realidad son ignorantes. Esto se refuerza en manuscritos que explican 'Los Caprichos', donde se menciona que incluso los burros aplauden la mala música por moda. Además, se ha interpretado como una alusión encubierta a Carlos IV, María Luisa de Parma y Manuel Godoy, donde el asno representa a la monarquía y el mono a Godoy, quien daba recitales para ganarse el favor real.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/brabisimo.jpg
+
+  utter_desastres:
+  - text: "Durante la Guerra de la Independencia en España (1808-1814), Goya presenció los horrores del conflicto y los plasmó en su serie de grabados titulada 'Los Desastres de la Guerra'. Estos ochenta grabados fueron creados entre 1810 y 1814, en secreto debido a la ocupación francesa de Madrid. La serie ofrece una visión cruda y desilusionada de la guerra, criticando tanto la violencia como las atrocidades de ambos bandos. Goya retrata la crueldad, violaciones, devastación, muerte, miseria y hambre que acompañan a la guerra, mostrando el fracaso de la razón y reflexionando sobre la oscuridad de la naturaleza humana en tiempos de conflicto. 'Los Desastres de la Guerra' son considerados una crónica sombría del fracaso humano en el contexto bélico.\nEn el museo destacan tres. Elija uno:"
+    buttons:   
+      - title: Trister pensamientos
+        payload: /pensamientos
+      - title: Ni por esas
+        payload: /niporesas
+      - title: Murió la verdad
+        payload: /verdad
+
+  utter_pensamientos:
+  - text: "TRISTES PENSAMIENTOS DE LO QUE HA DE ACONTECER\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte, punta seca, buril y bruñidor.\n\n🗓️ Año: 1810-1814.\n\nDescripción: La estampa inicial de 'Los Desastres de la Guerra', titulada 'Tristes presentimientos', revela un sombrío presagio en medio de la oscuridad. Un hombre de rodillas extiende los brazos en cruz y alza la mirada al cielo, mientras una figura monstruosa apenas intuida sugiere un futuro ominoso. Esta figura en súplica recuerda a 'La oración en el huerto' de Goya y a la representación religiosa de San Isidro labrador. Su gesto implorante parece rogar un milagro que evite la catástrofe, similar a la superviviente de 'El naufragio', aunque aquí se pide auxilio después de la desgracia.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/Tristes-presentimientos-de-lo-que-ha-de-acontecer.jpg
+
+  utter_niporesas:
+  - text: "NI POR ESAS\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte, aguada, punta seca y buril.\n\n🗓️ Año: 1810-1814.\n\nDescripción: Esta estampa de 'Los Desastres de la Guerra' es más sombría que otras. Goya sugiere que la escena ocurre en un lugar aislado donde las mujeres no pueden recibir ayuda. Un arco, similar a la arquitectura en su pintura 'Interior de una prisión', enmarca este espacio. En medio de esta oscuridad, resaltan la casaca del soldado, las ropas de la mujer, el cuerpo del niño y el rostro de la figura femenina en segundo plano.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/ni-por-esas.jpg
+
+  utter_verdad:
+  - text: "MURIÓ LA VERDAD\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte y bruñidor.\n\n🗓️ Año: 1810-1814.\n\nDescripción: La estampa muestra a una figura femenina, posiblemente la Verdad, en el suelo con los pechos descubiertos y rayos de luz emanando de ella. Personas la rodean en un entierro: un obispo oficia la ceremonia y monjes se preparan para sepultarla. La alegoría de la Justicia a la izquierda sostiene una balanza y se cubre el rostro en señal de duelo. Se especula que la mujer podría simbolizar la Constitución, coronada de laureles por su victoria, y los rayos sugieren que persiste viva y se resiste al entierro.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/murio-la-verdad.jpg
+
+  utter_tauromaquia:
+  - text: "En 1816, Goya lanzó la serie de grabados 'La Tauromaquia', centrándose en la historia y suertes del toreo en España, desde la Edad Media hasta los toreros contemporáneos como Pedro Romero y José Delgado. Aunque Goya buscaba capturar el dramatismo y la técnica del toreo, la serie no tuvo el éxito comercial deseado, ya que el público prefirió imágenes taurinas más convencionales.\nEn el museo destacan tres. Elija uno:"
+    buttons:   
+      - title: Ligereza y atrevimiento
+        payload: /juanito
+      - title: Desgracias
+        payload: /desgracias
+      - title: La muerte de Pepe
+        payload: /pepe
+
+  utter_juanito:
+  - text: "LIGEREZA Y ATREVIMIENTO DE JUANITO APIÑANIZ EN LA DE MADRID\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte y aguatinta.\n\n🗓️ Año: 1816.\n\nDescripción: Esta estampa clave de 'La Tauromaquia' destaca por capturar el movimiento en el instante en que el torero Juanito Apiñani vuela sobre el toro sostenido por una garrocha, frente a un público en un tendido medio lleno. La composición equilibrada se centra en el torero y el toro en el centro, transmitiendo el calor sofocante mediante iluminación intensa y detalles visuales. La presencia de espectadores apiñados a la izquierda, en contraste con los tendidos vacíos, crea un impacto visual. La escena, de inmediatez fotográfica, sugiere que Goya fue testigo del momento, realzando el movimiento con la disposición de personajes.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/Ligereza-y-atrevimiento.jpg
+
+  utter_desgracias:
+  - text: "DESGRACIAS ACAECIDAS EN EL TENDIDO DE LA PLAZA DE MADRID, Y MUERTE DEL ALCALDE DE TORREJÓN\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte, aguatinta bruñida, punta seca y buril.\n\n🗓️ Año: 1816.\n\nDescripción: La estampa destaca por su perspectiva única y disparatada, colocando al espectador a la altura del tendido. La asimetría y la disposición caótica de la multitud en un cuarto del espacio crean una sensación de desasosiego. La acción se desarrolla en el graderío, rompiendo la composición habitual de escenas taurinas que se centran en la arena. La intención es transmitir una sensación de zozobra.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/desgracias-acaecidas-en-el-tendido.jpg
+
+  utter_pepe:
+  - text: "LA DESGRACIADA MUERTE DE PEPE\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte, aguatinta, punta seca y buril.\n\n🗓️Año: 1816.\n\nDescripción: Con esta estampa, Goya cierra su serie de la Tauromaquia, reflejando la muerte de Pepe Illo, famoso torero del siglo XVIII y rival de Pedro Romero. La muerte traumática del diestro en mayo de 1801 en Madrid, presenciada por muchos y documentada por varios, incluida la reina María Luisa, marcó la historia taurina. Aunque no se confirma si Goya presenció el evento, su fidelidad en la representación del torero herido en la arena, con el toro clavando un pitón en su estómago, muestra su poderosa evocación del trágico acontecimiento.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/Muerte-de-Pepe-Illo.jpg
+
+  utter_disparates:
+  - text: "Los Disparates constituye la última serie de grabados significativa de Goya, creada entre 1816 y 1824. Incompleta debido a su partida a Francia en 1824 debido al retorno del absolutismo, no se publicó en su vida. Los grabados presentan imágenes enigmáticas sin narrativa clara, algunos con títulos que comienzan con la palabra disparate. Aunque tocan temas lúdicos, la iluminación nocturna les otorga un tono oscuro. Muchos temas ya fueron abordados en Los Caprichos, pero aquí se enfocan de manera dramática o grotesca. Los temas incluyen el miedo a lo desconocido, crítica social, erotismo y el pesimismo de Goya hacia la naturaleza humana.\n\nEn el museo destacan tres, elija uno:"
+    buttons:   
+      - title: Femenino
+        payload: /femenino
+      - title: De miedo
+        payload: /miedo
+      - title: Volante
+        payload: /volante
+
+  utter_femenino:
+  - text: "DISPARATE FEMENINO\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte, aguatinta y punta seca.\n\n🗓️ Año: 1816-1824.\n\nDescripción: La primera estampa de Los Disparates muestra a seis mujeres manteando a hombres y un burro, reelaborando una escena similar de la pintura El pelele de 1791. Goya cambia el tono a inquietante, alejándose del juego alegre. Los peleles vuelan, y en la manta yace un burro, simbolizando la estupidez masculina, víctimas de la astucia femenina. La escena refleja un escarnio masculino y sugiere la transformación del inocente juego en un acto de burla.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/Disparate-femenino.jpg
+  utter_miedo:
+  - text: "DISPARATE DE MIEDO\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte, agua bruñida y punta seca.\n\n🗓️ Año: 1816-1824.\n\nDescripción: Se han propuesto varias interpretaciones de esta escena, muchas en línea con Los Desastres (Tristes presentimientos de lo que ha de acontecer), vinculándola con la Guerra de la Independencia. El fantasma podría representar el castigo a los ejércitos por el sufrimiento causado. También simboliza la resistencia del pueblo español ante el ejército napoleónico. Otra posibilidad es que sea un espantapájaros, como en el Capricho 52, para atemorizar y ahuyentar a las tropas. En resumen, el fantasma encarna el sufrimiento y mal de las guerras.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/de-miedo.jpg
+
+  utter_volante:
+  - text: "DISPARATE VOLANTE\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Aguafuerte y aguatinta.\n\n🗓️ Año: 1816-1824.\n\nDescripción: Un ser monstruoso y alado, con cuerpo de caballo y cabeza de ave carroñera, transporta a una pareja en su lomo. El hombre, ataviado de forma atemporal, sujeta a una mujer que lucha por liberarse de su captor, elevando las manos en un gesto similar a otra estampa llamada El caballo raptor o Disparate desenfrenado. La obra refleja la tensión sexual mientras el hombre, impulsado por la lujuria, rapta a la mujer y la lleva en un ominoso vuelo hacia la oscuridad.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/volante.jpg
+
+  utter_burdeos:
+  - text: "En su etapa avanzada, Goya experimentó con la litografía en la década de 1820, trabajando junto al litógrafo Mr. Gaulon durante su exilio en Burdeos. La serie resultante, creada entre 1824 y 1825, es una colección de obras maestras de litografía que Goya planeaba vender de manera anónima y asequible en una tienda de grabados en París. Las estampas, firmadas por Goya, presentan un estilo aparentemente descuidado pero sorprenden por su espontaneidad y vigor, reflejando la vitalidad de Goya a pesar de su edad avanzada. Aunque se produjeron cien copias en el taller de Gaulon, las colecciones completas son escasas hoy en día. Estas escenas pueden relacionarse con pequeños cuadros taurinos que Goya pintó en esos mismos años, mostrando su destreza en la representación tanto de figuras humanas como de animales.\nSi desea conocer más detalles acerca de alguno de los grabados principales, elija uno:"
+    buttons:   
+      - title: Diversión de España
+        payload: /diversion
+      - title: El famoso americano
+        payload: /americano
+      - title: Plaza partida
+        payload: /partida
+
+  utter_diversion:
+  - text: "DIVERSIÓN DE ESPAÑA\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Lápiz litográfico y rascador.\n\n🗓️ Año: 1825.\n\nDescripción: La tercera estampa de la serie representa una animada escena de capea de novillos, con un público numeroso formando un círculo en el ruedo alrededor de un grupo central de toros. Uno de los toros pisa a un espontáneo que yace en el suelo con su capote. Otro toro aparece a la izquierda embistiendo y pisoteando a varias personas, mientras novilleros esperan su turno con actitudes risueñas y gestos grotescos, aparentemente ajenos al peligro. La escena captura la atmósfera festiva y caótica de la capea, con elementos cómicos y peligrosos entrelazados.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/dibersion-de-espana.jpg
+
+  utter_americano:
+  - text: "EL FAMOSO AMERICANO MARIANO CEBALLOS\n\nAutor: Francisco de Goya.\n🖌️ Técnica: Lápiz litográfico y rascador.\n\n🗓️ Año: 1825.\n\nDescripción: La primera estampa muestra a Mariano Ceballos, el torero mestizo, montando un toro negro y clavando un rejón en otro toro en un ruedo con toreros y espectadores. El contraste de luces y sombras resalta la acción.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/el-famoso-americano-mariano-ceballos.jpg
+
+  utter_partida:
+  - text: "PLAZA PARTIDA\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Lápiz litográfico y rascador.\n\n🗓️ Año: 1825.\n\nDescripción: En esta estampa, la cuarta de la serie, se muestra una plaza de toros dividida por una barrera en dos partes. A la derecha, un torero con un estoque corto se prepara para matar al toro, usando su sombrero como señuelo. A la izquierda, un banderillero se prepara para entrar al toro con los rehiletes en alto. El público llena ambos lados de la barrera en diagonal.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/plaza-partida.jpg
+
+  utter_pinturas:
+  - text: "En el museo podrá encontrar nueve obras destacadas de Goya, elija una para más información:"
+    buttons:
+      - title: La Gloria
+        payload: /gloria
+      - title: San Joaquín
+        payload: /joaquin
+      - title: Autorretrato
+        payload: /autorretrato
+      - title: Esopo y Menipo
+        payload: /menipo
+      - title: José de Cistué
+        payload: /cistue
+      - title: Mª Luisa de Parma
+        payload: /parma
+      - title: Félix de Azara
+        payload: /azara
+      - title: La carga de los Mamelucos
+        payload: /mamelucos
+      - title: Baile de máscaras
+        payload: /baile
+
+  utter_gloria:
+  - text: "LA GLORIA O ADORACIÓN DEL NOMBRE DE DIOS\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre lienzo.\n\n🗓️ Año: 1771-1772.\n\nDescripción: El Triángulo Trinitario domina la parte central superior del fresco, ideal para su observación desde el exterior del Coreto. Ángeles jóvenes y niños se esparcen entre nubes adorando al símbolo, formando una composición en aspa en medio de una atmósfera agitada. En el grupo central de ángeles, uno sostiene una partitura, representando los coros celestiales; a la derecha, un gran ángel con incensario y otro acostado; y a la izquierda, dos ángeles que se arrullan, recordando a los ángeles de San Antonio de la Florida.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/la-gloria-o-la-adoraci-n-del-nombre-de-dios.jpg
+
+  utter_joaquin:
+  - text: "SAN JOAQUÍN Y SANTA ANA\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre muro traspasado a lienzo.\n\n🗓️ Año: 1772.\n\nDescripción: En la primera composición, que honra a los padres de la Virgen, San Joaquín y Santa Ana, se encuentra en el muro de los pies, sobre la puerta y sus lados, lo que reduce la altura central. En este punto, dos ángeles arrodillados con alas extendidas adoran el Arca de la Alianza. A la izquierda, cerca de la puerta, San Joaquín, vestido con un manto ocre, es introducido por otro ángel; este último lleva sandalias y viste una túnica azul que muestra parte del torso.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/san%20joaquin%20y%20santa%20ana.jpg
+
+  utter_autorretrato:
+  - text: "AUTORRETRATO\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre lienzo.\n\n🗓️ Año: 1775.\n\nDescripción: Este autorretrato de Goya, junto con la versión en la Academia, es uno de los más sinceros y directos. El pintor de sesenta y nueve años está representado en un fondo oscuro con remolinos visibles. Viste un batín similar al de su discípulo Asensio Julià, con una camisola blanca asomando. El enfoque está en sus rasgos, especialmente su rostro girado hacia el espectador, mostrando fatiga y nostalgia, pero también resignación y fortaleza.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/autoretrato-de-goya.jpg
+
+  utter_menipo:
+  - text: "ESOPO Y MENIPO\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre lienzo.\n\n🗓️ Año: 1778.\n\nDescripción: Velázquez pintó retratos imaginarios de los filósofos antiguos Menipo y Esopo para decorar la Torre de la Parada junto con obras de Rubens. Las versiones atribuidas a Goya muestran su interés en la obra de Velázquez. Menipo, filósofo cínico nacido alrededor del 270 a.C., originalmente esclavo, obtuvo la ciudadanía en Tebas por sus escritos. En la pintura, se le representa de perfil con una actitud irónica, cubierto por una túnica que deja al descubierto solo sus piernas. A sus pies, libros, un rollo de papel y una jarra sobre tabla de madera simbolizan la inestabilidad de la vida.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/esopo-y-menipo.jpg
+
+  utter_cistue:
+  - text: "DON JOSÉ DE CISTUÉ Y COLL\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre lienzo.\n\n🗓️ Año: 1788.\n\nDescripción: José Cistué y Coll, primer barón de la Menglana y catedrático en la Universidad Sertoriana de Huesca, fue retratado por Goya por encargo de la universidad. El retrato muestra al personaje vestido con toga negra, puños y golilla blancos, sosteniendo una carta en una mano y ocultando la otra detrás de su capa. Lleva la cruz de Carlos III en el pecho y una peluca blanca en la cabeza. La composición es similar al retrato de Antonio Veyán, también encargado por la universidad, y ambas obras podrían haber sido diseñadas para estar juntas debido a sus dimensiones idénticas y similitudes en postura y luz.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/cistue.jpg
+
+  utter_parma:
+  - text: "RETRATO DE MARIA LUISA DE PARMA\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre lienzo.\n\n🗓️ Año: 1789.\n\nDescripción: Esta es una réplica de los retratos de Carlos IV y María Luisa de Parma, pintados por Goya en 1788 al ascender al trono. La Reina María Luisa, de pie, viste un lujoso vestido azul entallado con bordados dorados y lleva la cruz de la orden de María Teresa de Austria. Sostiene un abanico cerrado y luce una escofieta francesa adornada con gasas y plumas. El fondo muestra un cortinaje verde diagonal y en la mesa izquierda están la corona y el manto de armiño, símbolos reales.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/maria%20luisa.jpg
+
+  utter_azara:
+  - text: "RETRATO DE FÉLIX DE AZARA\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre lienzo.\n\n🗓️ Año: 1805.\n\nDescripción: Félix de Azara (1746-1821) fue un naturalista, geógrafo y militar. Participó en la batalla de Argel y catalogó la flora y fauna del Río de la Plata. Frente a un fondo de animales disecados, con un cortinaje y mesa con sus libros y bicornio, se muestra en uniforme militar, destacando su casaca oscura y pantalones amarillos. Sujeta un papel con su nombre y firma en una mano, mientras la otra apoya un bastón de mando como comandante en jefe. Su expresivo rostro refleja confianza y orgullo profesional.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/retrato-de-f-lix-de-azara.jpg
+
+  utter_mamelucos:
+  - text: "EL DOS DE MAYO DE 1808 O LA CARGA DE LOS MAMELUCOS\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre papel pegado a tabla.\n\n🗓️ Año: 1814.\n\nDescripción: El 2 de mayo de 1808, Madrid se levantó contra las tropas napoleónicas, marcando el inicio de la Guerra de la Independencia. La represión fue feroz y se extendió a todo el país, culminando en el regreso de Fernando VII y el absolutismo. Goya combina realidad e imaginación para crear una escena dramática que refleje la violencia de ambos bandos en el conflicto. La imagen se centra en el mameluco muerto en su caballo blanco, mientras un español furioso lo apuñala y otro hiere al caballo. El contraste entre el rojo del pantalón del mameluco y el blanco del caballo acentúa el impacto visual. La conexión entre este cuadro y otro de Goya se da a través de la vestimenta del personaje que clava la vara, vinculando las obras.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/el-dos-de-mayo-de-1808-en-madrid-o-la-carga-de-los-mamelucos.jpg
+
+  utter_baile:
+  - text: "BAILE DE MÁSCARAS O DANZANTES ENMASCARADOS BAJO UN ARCO\n\nAutor: Francisco de Goya.\n\n🖌️ Técnica: Óleo sobre lienzo.\n\n🗓️ Año: 1815.\n\nDescripción: En una escena iluminada por un arco central, un grupo de figuras enmascaradas baila, destacando una joven en vestido amarillo ejecutando un paso similar a la jota aragonesa. Tres figuras más acompañan el baile. Bajo el arco, a la izquierda, tres personas humildes están sentadas, creando un contraste entre actitudes. Goya aborda el tema de las máscaras en su obra, como en 'El entierro de la sardina', donde muestra la sociedad irracional. Aquí, podría expresar su perplejidad ante tradiciones sombrías del pueblo.\n\nUbicación: 2ª planta."
+    image: https://museogoya.fundacionibercaja.es/img/obras/baile%20de%20mascaras.jpg
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
