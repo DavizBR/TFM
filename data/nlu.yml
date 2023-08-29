@@ -1,0 +1,2385 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hey
+    - hola
+    - buenas
+    - hola buenas
+    - buenos días
+    - buenas tardes
+    - qué pasa
+    - holi
+    - hello
+    - saludos
+    - te saludo
+    - bonjour
+    - buen día
+    - buenas noches
+    - qué tal
+    - ¡Hola!
+    - ¡Buenos días! ¿Cómo estás?
+    - Hola, ¿cómo va todo?
+    - Hola, ¿cómo estás hoy?
+    - Hola, ¿cómo te va?
+    - ¡Hola! Un placer saludarte.
+    - Hola, un saludo desde aquí.
+    - Buen día, espero que estés bien.
+    - Buenas tardes, ¿cómo te encuentras?
+    - Hola, ¿cómo ha sido tu día?
+    - Hola, ¿qué tal estás?
+    - Hola, ¿puedes ayudarme?
+    - Hola necesito ayuda
+    - Ayudame
+    - Quiero hacer una consulta
+    - Una consulta
+    - consulta
+    - pregunta
+    - Una pregunta
+    - tengo una pregunta
+    - una cosa
+    - ola
+    - quiero saber algo
+    - quiero información
+    - info
+    - dame información
+    - dime algo
+    - muy buenas
+    - qué tal Goya
+    - Hola Goya
+    - Hola Franciso
+    - Hola Francho
+    - qué tal Francisco
+    - qué tal Francho
+    - qué tal Fran
+    - Deseo realizar una consulta
+    - Me gustaría hacer una consulta
+    - Estoy interesado/a en hacer una consulta
+    - Quisiera hacer una consulta
+    - Necesito hacer una consulta
+    - Estoy buscando hacer una consulta
+    - Tengo una pregunta que hacer
+    - Estoy en busca de información
+    - Me interesa obtener respuesta a una pregunta
+    - Pretendo plantear una cuestión
+    - Estoy solicitando asesoramiento
+    - Estoy indagando sobre algo
+    - Me encuentro con dudas y necesito aclararlas
+    - Quiero obtener información adicional
+    - Estoy buscando orientación
+    - Me interesa obtener más detalles sobre un tema
+    - Estoy pensando en consultar sobre algo en específico
+    - Estoy investigando y necesito respuestas
+    - Quiero solicitar una explicación
+    - Estoy interesado/a en recibir asistencia
+    - Encantado
+
+
+- intent: adios
+  examples: |
+    - Adiós
+    - Hasta luego
+    - Hasta pronto
+    - Nos vemos
+    - Chao
+    - Bye
+    - Hasta la próxima
+    - Que tengas un buen día
+    - Que te vaya bien
+    - nos vemos pronto
+    - Cuídate
+    - ¡Hasta pronto! 
+    - Nos vemos más tarde
+    - Adiós, que tengas un buen día
+    - Que tengas una excelente jornada
+    - Que todo te vaya genial
+    - Hasta la próxima vez que hablemos
+    - Cuídate mucho
+    - Espero volver a verte pronto
+    - que tengas una maravillosa tarde
+    - Que tengas un buen descanso
+    - que disfrutes el día
+    - Adiós y gracias
+    - Que tengas un buen fin de semana
+    - que tengas un feliz día
+    - que tengas una gran semana
+    - Au revoir
+    - Un placer
+    - Con Dios
+    - me voy
+    - tengo que irme
+    - ya nos veremos
+
+
+- intent: gracias
+  examples: |
+    - Gracias
+    - Muchas gracias
+    - grax
+    - merci
+    - thank you
+    - Te lo agradezco
+    - agradezco
+    - Mil gracias
+    - Gracias por tu ayuda
+    - Gracias por ayudarme
+    - Te estoy agradecido/a
+    - Aprecio tu apoyo
+    - Gracias por la asistencia
+    - Te lo agradezco mucho
+    - Te doy las gracias
+    - Te estoy muy agradecido/a
+    - No sé cómo agradecerte lo suficiente
+    - Estoy agradecido/a por tu tiempo
+    - Quiero expresar mi gratitud
+    - Te lo agradezco de corazón
+    - Me siento agradecido/a por tu colaboración
+    - No puedo agradecerte lo suficiente tu ayuda
+    - Te estoy eternamente agradecido/a
+    - Te lo agradezco infinitamente
+    - Gracias por estar ahí
+    - Agradezco tu amabilidad
+    - Gracias por ser tan atento/a
+    - Agradezco tu comprensión
+    - Estoy agradecido/a por tu paciencia
+    - Gracias por escucharme
+    - Aprecio mucho tu ayuda
+    - Te agradezco por brindarme esta oportunidad
+    - Estoy muy agradecido/a por tu generosidad
+    - Te agradezco por estar siempre disponible
+    - Gracias por tu buen servicio
+
+- intent: bot_challenge
+  examples: |
+    - ¿Eres un bot?
+    - ¿Eres un humano o un bot?
+    - ¿Estoy hablando con un bot?
+    - ¿Eres una inteligencia artificial?
+    - ¿Eres una máquina?
+    - ¿Eres un programa de computadora?
+    - ¿Eres automatizado?
+    - ¿Eres una entidad virtual?
+    - ¿Eres una creación digital?
+    - ¿Eres una respuesta automática?
+    - ¿Eres un sistema automatizado?
+    - ¿Eres un ser humano real?
+    - ¿Eres una persona o un bot?
+    - ¿Eres una entidad virtual o una persona real?
+    - ¿Eres un programa de inteligencia artificial?
+    - ¿Eres una entidad generada por ordenador?
+    - ¿Eres una entidad virtual o un ser humano detrás de la pantalla?
+    - ¿Eres una simulación de conversación?
+    - ¿Eres un algoritmo?
+    - ¿Eres un ente virtual programado para responder preguntas?
+    - ¿Eres una IA o alguien detrás de la pantalla?
+    - ¿Eres una forma de inteligencia artificial avanzada?
+    - ¿Eres un chatbot?
+    - ¿Eres una entidad de diálogo?
+    - ¿Eres una entidad de conversación automática?
+    - ¿Eres una entidad de inteligencia artificial diseñada para interactuar con usuarios?
+    - ¿Eres una entidad virtual desarrollada para responder consultas?
+    - ¿Eres una máquina programada para mantener conversaciones?
+    - ¿Eres un bot creado para ayudar a los usuarios?
+    - ¿Hablo con un humano?
+    - ¿Hablo con un robot?
+    - Estoy hablando con un humano?
+    - Estoy hablando con un robot?
+
+
+- intent: give_time
+  examples: |
+    - ¿Qué hora es?
+    - que hora eS
+    - qué hora es?
+    - dame la hora
+    - dime la hora
+    - en qué hora vivo
+    - qué hora es
+    - reloj
+    - modo reloj
+    - tienes hora?
+    - tienes hora
+    - hora
+    - la hora
+    - Dime la hora actual
+    - ¿Puedes decirme la hora?
+    - Necesito saber qué hora es
+    - ¿Me puedes decir la hora exacta?
+    - ¿Cuál es la hora del día?
+    - Quiero saber qué hora marca el reloj
+    - ¿Podrías darme la hora, por favor?
+    - Estoy buscando la hora
+    - ¿Sabes qué hora es?
+    - ¿Puedes decirme la hora en este momento?
+    - ¿Cuál es la hora en este instante?
+    - ¿Podrías indicarme la hora precisa?
+    - Estoy interesado en saber la hora exacta
+    - Quisiera saber la hora en este momento
+    - ¿Podrías proporcionarme la hora correcta?
+    - ¿Qué hora marca el reloj?
+    - ¿Cuál es la hora actual?
+    - ¿Puedes darme la hora que es en este instante?
+    - Me gustaría saber la hora
+    - ¿Sabes qué hora es ahora mismo exactamente?
+    - ¿Cuál es la hora exacta en este instante?
+    - ¿Puedes darme la hora exacta?
+    - Necesito conocer la hora
+    - ¿Sabes qué hora marca el reloj?
+    - ¿Puedes decirme la hora exacta?
+    - Dime la hora exacta
+    - ¿Podrías informarme sobre la hora?
+    - Estoy interesado en saber la hora
+    - Quisiera conocer la hora actual
+
+- intent: about_museo
+  examples: |
+    - ¿Qué es este lugar?
+    - ¿Qué es esto?
+    - Museo
+    - Museo de Goya
+    - Museo Goya
+    - ¿Dónde estoy?
+    - ¿A qué tipo de museo estoy entrando?
+    - ¿Esto es un museo?
+    - ¿Hablo con el museo?
+    - Hablame de este museo
+    - Hablame del museo
+    - Quiero saber sobre este museo
+    - Que es este museo
+    - Dame información del museo
+    - Información museo
+    - Información
+    - Dime algo del museo
+    - Explícame qué es este museo
+    - ¿Qué tipo de museo es este?
+    - ¿Cuál es el nombre de este museo?
+    - Como se llama este museo
+    - Nombre del museo
+    - Que nombre tiene el museo
+    - Dame el nombre del museo
+    - ¿Qué puedo encontrar en este museo?
+    - ¿Qué hay en este museo?
+    - Qué me ofrece el museo?
+    - Qué ver en el museo
+    - ¿Qué puedo ver en el museo?
+    - Dime qué ver en el museo
+    - Dime más sobre este museo
+    - ¿Qué exhibiciones hay en este museo?
+    - Qué cosas hay en el museo
+    - De qué es el museo.
+    - Qué cuadros hay en el museo?
+    - Qué pinturas hay en el museo?
+    - Háblame de tus cuadros.
+    - Háblame de tu museo.
+    - Quiero saber más de tu museo
+    - Información de tu museo
+    - Cuentame algo de tu museo
+    - Dime mas de tu museo
+    - Tienes un museo
+    - Tu museo
+    - ¿Cuál es el enfoque principal de este museo?
+    - De qué va el museo
+    - ¿Cuál es la temática de este museo?
+    - ¿Cuál es el objetivo de este museo?
+    - ¿Qué hace especial a este museo?
+    - ¿Qué obras de arte se encuentran en este museo?
+    - ¿Puedes darme información sobre este museo?
+    - ¿Cuál es la misión de este museo?
+    - ¿Qué es este museo?
+    - Qué sentido tiene este museo
+    - Sentido del museo
+    - Porqué del museo
+    - Razón del museo
+    - Tema del museo
+    - Temática
+    - Qué ver
+
+- intent: horario
+  examples: |
+    - ¿Cuál es el horario de apertura del museo?
+    - Horario
+    - Horario del museo
+    - Hora apertura
+    - Hora cierre
+    - Cual es el horario
+    - Hora de apertura
+    - Hora de cierre
+    - Y cual es el horario?
+    - Cual es el horario del museo en sábado
+    - Cual es el horario del museo en domingo
+    - Cual es el horario del museo en fin de semana
+    - Horario fin de semana
+    - Dime el horario
+    - Cuando abres
+    - Cuando cierras
+    - ¿Cuándo abre el museo?
+    - ¿Cuándo cierra el museo?
+    - ¿A qué hora abre el museo?
+    - Dime los horarios de visita del museo.
+    - ¿A qué hora cierra el museo hoy?
+    - ¿Cuál es el horario de cierre del museo?
+    - Quisiera saber los horarios de funcionamiento del museo.
+    - ¿Puedes decirme los horarios de visita?
+    - ¿A qué hora abre y cierra el museo los fines de semana?
+    - ¿Cuál es el horario de apertura los días festivos?
+    - ¿A qué hora abre la exposición principal del museo?
+    - Dime los horarios de visita durante la semana.
+    - ¿Cuánto tiempo puedo visitar el museo en un día?
+    - ¿El museo tiene horarios extendidos en algún día?
+    - ¿A qué hora comienzan las visitas guiadas?
+    - ¿El museo cierra durante el almuerzo?
+    - ¿Cuál es el último horario de entrada al museo?
+    - ¿El museo abre todos los días de la semana?
+    - ¿Cuál es el horario de apertura los días de lluvia?
+    - ¿Hay horarios especiales para grupos o visitas escolares?
+    - ¿A qué hora se realizan las actividades educativas en el museo?
+    - ¿El horario del museo varía en temporada alta?
+    - ¿A qué hora abren y cierran las exposiciones temporales?
+    - ¿El horario del museo cambia los días festivos?
+    - ¿El museo tiene horarios reducidos en invierno?
+    - ¿Cuál es el horario de apertura los días de semana?
+    - ¿El museo ofrece visitas nocturnas?
+    - ¿A qué hora se realizan los eventos culturales en el museo?
+    - ¿El horario del museo es el mismo los fines de semana?
+    - ¿El museo tiene horarios especiales para fotografía o filmaciones?
+    - ¿Cuándo es el mejor momento para evitar las multitudes en el museo?
+    - ¿El horario del museo es diferente en verano?
+    - ¿A qué hora abre y cierra la tienda del museo?
+    - ¿El museo tiene horarios específicos para visitantes con discapacidades?
+    - ¿Cuál es el horario de apertura los días laborales?
+    - ¿El museo tiene horarios especiales para eventos privados?
+    - ¿A qué hora se realizan las presentaciones de artistas en el museo?
+    - ¿El horario del museo cambia durante las vacaciones escolares?
+    - ¿El museo tiene horarios reducidos los días de mantenimiento?
+    - ¿Cuál es el horario de apertura los días de verano?
+    - ¿El museo cierra en alguna época del año para renovaciones?
+    - ¿A qué hora abre y cierra el restaurante del museo?
+    - ¿El horario del museo es el mismo todos los meses del año?
+
+- intent: duracion
+  examples: |
+    - ¿Cuánto dura la visita al museo?
+    - Cuanto dura la visita
+    - Duración
+    - Duración de la visita
+    - Visita
+    - Duración recorrido
+    - Tiempo visita
+    - Tiempo recorrido
+    - Recorrido
+    - Quiero saber cuanto dura la visita
+    - ¿Cuánto se tarda en ver el museo?
+    - ¿Cuánto tardo en ver el museo?
+    - Cuanto tardas en ver todo.
+    - Cuanto tiempo lleva ver todo.
+    - ¿Cuánto tiempo tardas en ver el museo?
+    - ¿Cuánto tiempo se recomienda para visitar el museo completo?
+    - Dime la duración de la visita al museo.
+    - ¿Cuántas horas se necesitan para recorrer el museo?
+    - ¿Cuánto tiempo debería planificar para mi visita al museo?
+    - ¿Cuánto tiempo se tarda en ver todas las exposiciones del museo?
+    - ¿Cuál es la duración estimada de una visita al museo?
+    - ¿Cuánto tiempo se recomienda dedicar al museo?
+    - ¿Cuántas horas necesito para explorar el museo a fondo?
+    - ¿Cuánto tiempo debería reservar para disfrutar del museo?
+    - ¿Cuánto tiempo suelen pasar los visitantes en el museo?
+    - ¿Cuál es el tiempo medio de visita al museo?
+    - ¿Cuántas horas necesito para ver las obras principales del museo?
+    - ¿Cuánto tiempo se sugiere para aprovechar al máximo el museo?
+    - ¿Cuánto tiempo suelen tomar las visitas guiadas en el museo?
+    - ¿Cuántas horas debo planificar para una visita completa al museo?
+    - ¿Cuánto tiempo se recomienda para recorrer las exposiciones temporales?
+    - ¿Cuánto tiempo se sugiere dedicar a cada área del museo?
+    - ¿Cuánto tiempo debería reservar para visitar la tienda del museo?
+    - ¿Cuál es el tiempo máximo permitido para estar dentro del museo?
+    - ¿Cuánto tiempo se sugiere para visitar el museo sin prisas?
+    - ¿Cuántas horas se necesitan para disfrutar de las actividades del museo?
+    - ¿Cuál es la duración recomendada para una visita en familia al museo?
+    - ¿Cuántas horas suelen dedicar los niños durante su visita al museo?
+    - ¿Cuánto tiempo se sugiere para apreciar las obras de arte del museo?
+    - ¿Cuál es la duración aproximada de una visita guiada al museo?
+    - ¿Cuánto tiempo lleban las actividades educativas?
+    - ¿Cuánto tiempo se recomienda para ver las exposiciones interactivas del museo?
+    - ¿Cuánto tiempo necesito para recorrer las exhibiciones especiales del museo?
+    - ¿Cuánto tiempo se sugiere para explorar la tienda de regalos del museo?
+    - ¿Cuánto tiempo debería planificar para participar en talleres o eventos del museo?
+    - ¿Cuál es la duración típica de una visita al museo?
+    - ¿Cuánto tiempo se recomienda para disfrutar de las instalaciones del museo?
+
+- intent: precios
+  examples: |
+    - ¿Cuánto cuesta la entrada general al museo?
+    - Precio entrada
+    - Precios
+    - Tarifas
+    - Descuentos
+    - Descuento
+    - Precio
+    - Rebaja
+    - Entrada
+    - Entradas
+    - Cuanto vale una entrada?
+    - Cuantos euros vale la entrada?
+    - ¿Cuánto cuesta una entrada?
+    - Precio de las entradas
+    - Quiero saber cuánto vale una entrada
+    - Dime los precios
+    - Dime el precio
+    - Dime las tarifas
+    - Dime los descuentos
+    - Información de precios
+    - Información sobre precios
+    - Información sobre tarifas
+    - Información sobre descuentos
+    - Quiero saber si me hacen descuento
+    - ¿Me hacen descuento?
+    - ¿Hay descuento?
+    - Descuento estudiante
+    - Descuento jubilado
+    - Precio estudiante
+    - Precio joven
+    - Precio jubilados
+    - Quiero saber los precios
+    - Quiero saber los descuentos
+    - ¿Cuál es el precio de la entrada para adultos?
+    - Dime el precio de la entrada al museo.
+    - ¿Cuánto debo pagar para entrar al museo?
+    - ¿Cuánto vale la entrada normal al museo?
+    - ¿Cuál es el precio para los niños?
+    - Descuento entradas
+    - Precio entrada menor
+    - Descuento grupos
+    - Precio grupos
+    - Precio adultos
+    - Tarifas para grupos
+    - ¿Hay algún descuento en la entrada del museo?
+    - ¿Cuánto cuesta la entrada para estudiantes?
+    - ¿Existe una tarifa reducida para personas mayores?
+    - ¿Cuánto debo pagar si soy estudiante universitario?
+    - ¿Hay alguna tarifa especial para grupos?
+    - ¿Cuál es el precio de la entrada para los visitantes extranjeros?
+    - ¿Cuánto cuesta la entrada para personas con discapacidad?
+    - ¿Hay descuentos para miembros del museo?
+    - ¿Hay descuentos para clientes de Ibercaja?
+    - ¿Cuál es el precio de la entrada para niños menores de 12 años?
+    - ¿Existen tarifas especiales para residentes locales?
+    - ¿Hay algún descuento para familias numerosas?
+    - ¿Cuánto vale la entrada para grupos escolares?
+    - ¿Existen tarifas especiales para visitantes de la tercera edad?
+    - ¿Hay algún descuento para militares o veteranos?
+    - ¿Cuál es el precio de la entrada para personas con carné joven?
+    - Carné joven
+    - Carnet joven
+    - Carnet universitario
+    - Descuento desempleados
+    - Descuentos parados
+    - Quiero conocer los precios
+    - ¿Existen tarifas especiales para miembros de asociaciones culturales?
+    - ¿Hay descuentos para estudiantes de arte?
+    - Precio festivos
+    - Precio fines de semana
+    - Cuanto vale la entrada en domingo
+    - Cuanto vale la entrada en sábado
+    - Cuánto vale la entrada en fin de semana?
+    - Precio de entrada en día lectivo
+    - ¿Existen tarifas especiales para residentes del municipio?
+    - ¿Hay algún descuento en la entrada para grupos de turistas?
+    - ¿Cuál es el precio de la entrada para familias?
+    - ¿Existen tarifas especiales para visitantes con pases de ciudad?
+    - ¿Hay descuentos para personas en situación de desempleo?
+    - ¿Cuánto cuesta la entrada para eventos especiales del museo?
+    - ¿Existen tarifas especiales para grupos de estudiantes?
+    - ¿Hay algún descuento en la entrada para suscriptores de revistas culturales?
+    - ¿Cuál es el precio de la entrada para miembros de otras instituciones culturales?
+    - ¿Existen tarifas especiales para personas con membresía de tarjeta de crédito?
+    - ¿Hay descuentos para grupos de investigadores o académicos?
+    - ¿Cuánto cuesta la entrada para visitantes en horario matutino?
+    - ¿Existen tarifas especiales para visitantes de otros museos del mismo tipo?
+    - ¿Hay algún descuento en la entrada para grupos de excursiones escolares?
+    - ¿Cuál es el precio de la entrada para visitantes en horario vespertino?
+    - ¿Existen tarifas especiales para empresas o instituciones patrocinadoras?
+    - ¿Cuánto cuesta la entrada en de fin de semana?
+
+- intent: gratuita
+  examples: |
+    - ¿Existe alguna entrada gratuita al museo?
+    - Gratuita
+    - Entrar gratis
+    - Entrada gratuita
+    - Entrada gratis
+    - Horario de entrada gratis
+    - Entrada libre
+    - Horario de entrada libre.
+    - ¿Qué días es gratis la entrada?
+    - ¿Cuándo puedo entrar gratis?
+    - No quiero pagar
+    - ¿Puedo ir gratis?
+    - Quiénes pueden entrar gratis al museo?
+    - Qué personas entran gratis
+    - ¿Cuándo es el día de entrada gratuita al museo?
+    - Dime si hay alguna forma de entrar al museo sin pagar.
+    - ¿El museo ofrece entrada libre en algún momento?
+    - ¿Hay días específicos en los que la entrada al museo es gratuita?
+    - ¿Cuál es la política de entrada gratuita del museo?
+    - ¿Existen condiciones especiales para obtener entrada gratuita al museo?
+    - ¿Hay alguna categoría de visitantes que pueda acceder gratuitamente al museo?
+    - ¿El museo ofrece entrada gratuita para residentes locales?
+    - ¿Existen programas o eventos en los que se pueda ingresar al museo gratis?
+    - ¿Hay descuentos o promociones especiales que permitan obtener entrada gratuita al museo?
+    - ¿Cuáles son los requisitos para obtener entrada gratuita al museo?
+    - ¿El museo ofrece entrada gratuita para estudiantes?
+    - ¿Existen fechas o temporadas en las que la entrada al museo es gratuita?
+    - ¿Hay alguna excepción en la que no se cobre entrada al museo?
+    - ¿El museo ofrece entrada gratuita para grupos escolares?
+    - ¿Hay alguna categoría de edad que pueda acceder al museo gratis?
+    - ¿El museo ofrece entrada gratuita para miembros de otras instituciones culturales?
+    - ¿Existen días o eventos especiales en los que la entrada al museo es gratuita para todos?
+    - ¿Hay alguna iniciativa o patrocinio que permita obtener entrada gratuita al museo?
+    - ¿El museo ofrece entrada gratuita para personas con discapacidad?
+    - ¿Existen condiciones específicas para obtener entrada gratuita al museo en días festivos?
+    - ¿Hay algún programa de acceso gratuito al museo para personas en situación de desempleo?
+    - ¿Existen requisitos especiales para obtener entrada gratuita al museo para personas mayores?
+    - ¿Hay alguna promoción que permita obtener entrada gratuita al museo en días de lluvia?
+    - ¿El museo ofrece entrada gratuita para grupos de turistas o excursiones?
+    - ¿Hay alguna colaboración o convenio con otras instituciones que ofrezca entrada gratuita al museo?
+    - ¿El museo ofrece entrada gratuita para visitantes en horario matutino o vespertino?
+    - ¿Existen programas educativos o culturales que permitan obtener entrada gratuita al museo?
+    - ¿Hay alguna promoción que permita obtener entrada gratuita al museo en días de semana?
+
+- intent: entradas
+  examples: |
+    - Adquirir entradas museo
+    - Quiero entradas para el museo
+    - Entradas
+    - Quiero entradas
+    - Me gustaría comprar entradas
+    - ¿Cómo consigo entradas?
+    - ¿Cómo compro entradas?
+    - Dime cómo conseguir entradas
+    - Dime cómo comprar entradas
+    - Dime dónde consigo las entradas
+    - Dime dónde compro las entradas
+    - Nos gustaría comprar entradas
+    - Pillar entradas
+    - Quiero pillar entradas
+    - Donde se pillan las entradas?
+    - Donde se compran las entradas?
+    - Donde se consiguen las entradas?
+    - Donde se ven las entradas?
+    - Comprar entradas taquilla
+    - Entradas taquilla
+    - Entradas presencial
+    - Compra de entradas
+    - Comprar entradas
+    - Ver entradas
+    - Dónde consigo entradas
+    - Quiero una entrada
+    - Obtener tickets museo
+    - Obtener entradas para el museo
+    - Compra de entradas para el museo
+    - Reservar entradas museo
+    - Conseguir entradas de acceso al museo
+    - Obtener entradas para visitar el museo
+    - Comprar billetes de entrada al museo
+    - Realizar la compra de entradas para el museo
+    - Obtener pases de admisión al museo
+    - Adquirir boletos de ingreso al museo
+    - Reservar entradas para visitar el museo
+    - Compra de entradas anticipadas para el museo
+    - Obtener tickets de acceso al museo
+    - Comprar entradas de visita al museo
+    - Reservar entradas para el museo
+    - Conseguir pases de entrada al museo
+    - Obtener boletos para visitar el museo
+    - Compra de tickets para el museo
+    - Adquirir pases museo
+    - Obtener boletos de admisión al museo
+    - Comprar entradas para el museo en línea
+    - Reservar billetes museo
+    - Conseguir tickets de ingreso al museo
+    - Obtener entradas anticipadas para el museo
+    - Comprar pases de visita al museo
+    - Reservar boletos de acceso al museo
+    - Conseguir boletos para el museo en línea
+    - Obtener tickets para visitar el museo
+    - Comprar boletos anticipados para el museo
+    - Adquirir entradas museo en línea
+    - Obtener pases de admisión al museo en línea
+    - Compra de entradas para el museo por internet
+    - Reservar pases para visitar el museo
+    - Conseguir boletos de ingreso al museo en línea
+    - Obtener entradas para el museo por internet
+    - Comprar tickets de visita al museo
+    - Adquirir boletos de acceso al museo en línea
+    - Reservar boletos para el museo por internet
+    - Conseguir pases de entrada al museo en línea
+    - Obtener boletos para visitar el museo en línea
+    - Comprar entradas para el museo con anticipación
+    - Reservar tickets museo
+    - Obtener pases anticipados para el museo
+    - Compra de boletos para el museo en línea
+    - Adquirir entradas para visitar el museo en línea
+    - Obtener boletos de admisión al museo por internet
+    - Conseguir tickets para el museo en línea
+    - Comprar entradas de visita al museo en línea
+    - Reservar boletos de acceso al museo por internet
+    - Conseguir entradas para el museo con anticipación
+    - Obtener pases para visitar el museo en línea
+    - Compra de tickets de ingreso al museo por internet
+    - Adquirir boletos para el museo con anticipación
+    - Obtener entradas museo
+    - ¿Dónde puedo comprar las entradas del museo?
+    - ¿Dónde consigo entradas?
+    - ¿Donde compro entradas para el museo?
+    - Página de entradas
+    - Web de entradas
+    - Página web de entradas
+    - Entradas online
+    - Quiero comprar entradas online
+    - Comprar entradas online
+    - Venta de entradas
+    - Venta de entradas online
+    - Quiero saber dónde adquirir las entradas del museo.
+    - ¿Dónde se venden los boletos para el museo?
+    - ¿En qué lugar puedo conseguir las entradas del museo?
+    - ¿Dónde debo dirigirme para comprar las entradas del museo?
+    - ¿Cuál es el punto de venta de las entradas del museo?
+    - ¿Dónde puedo obtener los boletos de entrada al museo?
+    - Quisiera saber dónde puedo adquirir las entradas del museo.
+    - ¿En qué sitio puedo conseguir los boletos para el museo?
+    - ¿Dónde encuentro los lugares de venta de entradas para el museo?
+    - ¿Dónde debo ir para obtener los boletos de entrada al museo?
+    - ¿En qué lugar puedo realizar la compra de las entradas del museo?
+    - ¿Dónde se pueden conseguir las entradas para el museo?
+    - Quiero comprar las entradas del museo, ¿dónde debo ir?
+    - ¿Dónde puedo conseguir las entradas de manera presencial para el museo?
+    - ¿En qué lugar se pueden adquirir las entradas del museo?
+    - ¿Dónde puedo obtener los tickets de entrada al museo?
+    - ¿Dónde debo dirigirme para conseguir los boletos del museo?
+    - ¿Dónde se encuentran los puntos de venta de las entradas del museo?
+    - ¿Dónde se compran los boletos de ingreso al museo?
+    - ¿Dónde puedo comprar los boletos de entrada al museo en línea?
+    - ¿Cuál es la página web para adquirir las entradas del museo?
+    - ¿Dónde puedo encontrar la plataforma en línea para comprar las entradas del museo?
+    - ¿En qué sitio web puedo realizar la compra de las entradas del museo?
+    - ¿Dónde puedo conseguir las entradas del museo a través de internet?
+    - ¿Dónde puedo realizar la reserva de las entradas del museo?
+    - ¿Dónde puedo encontrar el enlace para comprar las entradas del museo?
+    - ¿En qué página de internet puedo obtener los boletos de entrada al museo?
+    - ¿Dónde puedo adquirir las entradas del museo en línea?
+    - ¿Dónde puedo comprar las entradas del museo de manera anticipada?
+    - ¿En qué plataforma en línea puedo conseguir los boletos para el museo?
+    - ¿Dónde puedo encontrar la taquilla para comprar las entradas del museo?
+    - ¿Dónde se encuentra la oficina de venta de boletos del museo?
+    - ¿Dónde puedo obtener las entradas del museo en persona?
+    - ¿Dónde se localiza el punto de venta de boletos para el museo?
+    - ¿Dónde puedo adquirir las entradas del museo el día de la visita?
+    - ¿En qué lugar se encuentra la boletería para comprar las entradas del museo?
+
+- intent: contacto
+  examples: |
+    - ¿Cuál es el teléfono del museo?
+    - Teléfono
+    - Número
+    - Número de teléfono
+    - Dime el número de teléfono
+    - Teléfono museo
+    - Contacto
+    - Contacto del museo
+    - Contacto museo
+    - Cómo llamo al museo?
+    - Cómo contacto con el museo?
+    - Quiero hablar con el museo
+    - Cómo hablo con el museo?
+    - Hablar
+    - Hablar museo
+    - Hablar con el museo
+    - Correo
+    - Correo museo
+    - Dime el correo del museo
+    - Dime el correo electrónico del museo
+    - Correo electrónico
+    - Dirección electrónica del museo
+    - Necesito el correo del museo
+    - Email
+    - Quiero el email del museo
+    - Necesito el email del museo
+    - Cual es el correo del museo
+    - Cual es el numero del museo
+    - Cual es el email del museo
+    - Llamar al museo
+    - Para llamar al museo?
+    - Qué numero marco para llamar al museo?
+    - Contactar con el museo
+    - Cómo contactar con el museo
+    - ¿Me puedes proporcionar el número de teléfono del museo?
+    - Quisiera saber el contacto telefónico del museo.
+    - ¿Cuál es el correo electrónico del museo?
+    - ¿Me puedes dar el correo electrónico del museo?
+    - Quisiera saber la dirección de correo electrónico del museo.
+    - ¿Dónde puedo encontrar el teléfono del museo?
+    - ¿Cuál es el número de contacto del museo?
+    - ¿Me podrías proporcionar el email del museo?
+    - Quisiera obtener el correo electrónico de contacto del museo.
+    - ¿Dónde puedo encontrar el correo electrónico del museo?
+    - ¿Cuál es el teléfono de atención al cliente del museo?
+    - ¿Me puedes dar el número de teléfono de información del museo?
+    - Quisiera saber el teléfono de contacto del museo.
+    - ¿Cuál es la dirección de correo electrónico de atención al cliente del museo?
+    - ¿Me puedes proporcionar el email de información del museo?
+    - Quisiera saber el email de contacto del museo.
+    - ¿Dónde puedo encontrar el teléfono de información del museo?
+    - ¿Cuál es el número de contacto para consultas del museo?
+    - ¿Me puedes dar el correo electrónico de información del museo?
+    - Quisiera obtener el contacto telefónico del museo.
+    - ¿Dónde puedo encontrar el correo electrónico de atención al cliente del museo?
+    - ¿Cuál es el teléfono principal del museo?
+    - ¿Me puedes proporcionar el email de atención al cliente del museo?
+    - Quisiera saber el número de teléfono principal del museo.
+    - ¿Cuál es la dirección de correo electrónico principal del museo?
+    - ¿Me puedes dar el email de atención al cliente del museo?
+    - Quisiera obtener la dirección de correo electrónico principal del museo.
+    - ¿Dónde puedo encontrar el número de contacto principal del museo?
+    - ¿Cuál es el teléfono de información general del museo?
+    - ¿Me puedes proporcionar el correo electrónico principal del museo?
+    - Quisiera saber el teléfono de información general del museo.
+    - ¿Cuál es la dirección de correo electrónico para consultas del museo?
+    - ¿Me puedes dar el correo electrónico principal del museo?
+    - Quisiera obtener el teléfono de información general del museo.
+    - ¿Dónde puedo encontrar el correo electrónico para consultas del museo?
+
+- intent: direccion
+  examples: |
+    - ¿Cuál es la dirección del museo?
+    - Dirección
+    - Dirección del museo
+    - Ubicación
+    - Ubicación del museo
+    - Localizar
+    - Localización del museo
+    - ¿Cuál es la ubicación del museo?
+    - Calle
+    - Dirección postal
+    - Calle del museo
+    - Donde está el museo
+    - Encontrar museo
+    - Dónde está
+    - Código postal
+    - Ciudad
+    - ¿En qué ciudad está el museo?
+    - En que ciudad está
+    - Donde verlo
+    - Donde ver el museo
+    - En qué país está el museo
+    - Dónde está el museo
+    - Código postal del museo
+    - Cual es el código postal del museo?
+    - ¿Dónde se encuentra el museo?
+    - ¿En qué calle está el museo?
+    - ¿Me puedes decir la ubicación exacta del museo?
+    - Quisiera saber la dirección física del museo.
+    - ¿Cuál es la ubicación del museo?
+    - ¿En qué dirección puedo encontrar el museo?
+    - ¿Dónde está ubicado el museo?
+    - ¿En qué parte de la ciudad se encuentra el museo?
+    - Quisiera obtener la dirección completa del museo.
+    - ¿Cuál es la dirección exacta del museo?
+    - ¿En qué zona se ubica el museo?
+    - ¿Podrías decirme cómo llegar al museo?
+    - ¿En qué lugar puedo encontrar el museo?
+    - ¿Cuál es la calle del museo?
+    - ¿Dónde está situado el museo?
+    - ¿En qué dirección está el museo?
+    - Quisiera conocer la ubicación del museo en la ciudad.
+    - ¿Cuál es la dirección física del museo?
+    - ¿En qué parte de la ciudad puedo visitar el museo?
+    - ¿Dónde se localiza exactamente el museo?
+    - ¿En qué barrio está el museo?
+    - ¿Cuál es la calle y número del museo?
+    - ¿Dónde se sitúa el museo en la ciudad?
+    - ¿Podrías indicarme la ubicación exacta del museo?
+    - ¿En qué dirección se encuentra el museo en la ciudad?
+    - ¿Dónde puedo encontrar el museo en el mapa?
+    - ¿Cuál es la ubicación geográfica del museo?
+    - ¿En qué dirección y número está el museo?
+    - Quisiera saber dónde está localizado el museo.
+    - ¿Cuál es la dirección completa del museo?
+    - ¿Dónde puedo encontrar la sede del museo?
+    - ¿En qué calle y número se encuentra el museo?
+    - ¿Cuál es la dirección postal del museo?
+    - ¿Dónde puedo ubicar el museo en el centro de la ciudad?
+    - ¿En qué dirección física puedo encontrar el museo?
+    - ¿Cuál es la ubicación específica del museo?
+    - ¿Dónde se sitúa exactamente el museo?
+    - ¿En qué calle y avenida está el museo?
+    - ¿Cuál es la dirección exacta del museo en la ciudad?
+    - ¿Dónde se localiza el museo en el centro?
+    - ¿En qué dirección y zona se encuentra el museo?
+    - Quisiera obtener la ubicación detallada del museo.
+    - ¿Cuál es la dirección y número del museo?
+    - ¿Dónde está el museo en el mapa de la ciudad?
+    - ¿Cuál es la dirección postal y código del museo?
+    - ¿Dónde puedo encontrar el museo en la parte este de la ciudad?
+    - ¿Cuál es la dirección exacta del museo en la zona céntrica?
+    - ¿Dónde se sitúa el museo?
+
+- intent: guiadas
+  examples: |
+    - ¿Ofrecen visitas guiadas en el museo?
+    - Visitas guiadas
+    - Guiadas
+    - Visitas de grupos
+    - Grupos de visita
+    - Grupos
+    - Información visitas guiadas
+    - Guía
+    - Reservar visita guiada
+    - ¿Hay recorridos con guía en el museo?
+    - Quiero información sobre las visitas guiadas al museo.
+    - ¿Puedo hacer una visita con guía en el museo?
+    - ¿Cuál es el horario de las visitas guiadas en el museo?
+    - ¿Dónde puedo obtener información sobre las visitas guiadas?
+    - ¿Cómo puedo reservar una visita guiada al museo?
+    - ¿Es necesario hacer reserva para las visitas guiadas?
+    - ¿Cuál es el costo de las visitas guiadas al museo?
+    - ¿En qué idiomas se ofrecen las visitas guiadas?
+    - Quisiera saber más sobre las visitas guiadas disponibles.
+    - ¿Las visitas guiadas son gratuitas en el museo?
+    - ¿Cuánto tiempo duran las visitas guiadas en el museo?
+    - ¿Se pueden hacer visitas guiadas para grupos en el museo?
+    - ¿Las visitas guiadas incluyen acceso a todas las exposiciones?
+    - ¿Dónde puedo obtener el horario de las visitas guiadas?
+    - ¿Las visitas guiadas son conducidas por expertos en el museo?
+    - ¿Se pueden hacer visitas guiadas personalizadas en el museo?
+    - ¿Es necesario reservar con antelación para las visitas guiadas?
+    - Quisiera saber los temas abordados en las visitas guiadas.
+    - ¿Las visitas guiadas son accesibles para personas con discapacidad?
+    - ¿Hay visitas guiadas específicas para niños en el museo?
+    - ¿Cuántas personas pueden participar en las visitas guiadas?
+    - ¿Las visitas guiadas incluyen acceso a áreas restringidas?
+    - ¿Las visitas guiadas se adaptan a diferentes edades en el museo?
+    - ¿Las visitas guiadas están disponibles todos los días?
+    - ¿Puedo hacer preguntas durante las visitas guiadas?
+    - ¿Se pueden tomar fotografías durante las visitas guiadas?
+    - ¿Hay visitas guiadas temáticas en el museo?
+    - ¿Cuál es el punto de encuentro para las visitas guiadas?
+    - ¿Las visitas guiadas incluyen acceso a la tienda del museo?
+    - ¿Hay visitas guiadas nocturnas en el museo?
+    - ¿Puedo reservar una visita guiada para un grupo escolar?
+    - ¿Hay visitas guiadas en diferentes idiomas en el museo?
+    - ¿Se ofrecen visitas guiadas en lenguaje de señas en el museo?
+    - ¿Cuál es el contenido de las visitas guiadas en el museo?
+    - ¿Hay visitas guiadas disponibles en días festivos?
+    - ¿Puedo solicitar una visita guiada en un idioma específico?
+    - ¿Las visitas guiadas son interactivas en el museo?
+    - ¿Hay visitas guiadas enfocadas en artistas específicos?
+    - ¿Las visitas guiadas están incluidas en el precio de la entrada?
+    - ¿Se ofrecen visitas guiadas para grupos grandes en el museo?
+
+- intent: publico
+  examples: |
+    - ¿A quién está dirigido el museo?
+    - ¿A quién se dirige el museo?
+    - Público
+    - Público del museo
+    - Público general
+    - ¿Me va a gustar el museo?
+    - Me gustará el museo?
+    - Es recomendable?
+    - Es recomendable visitar el museo?
+    - Me recomiendas el museo?
+    - Me recomiendas visitar el museo?
+    - publico general del museo
+    - Cual es el publico del museo
+    - Quienes pueden disfrutar el museo
+    - Pueden ir los niños al museo?
+    - Personas a las que se dirige el museo
+    - Qué personas van al museo
+    - ¿Cuál es el público objetivo del museo?
+    - Quisiera saber para qué tipo de personas es el museo.
+    - Qué personas van al museo
+    - ¿El museo es adecuado para niños?
+    - ¿El museo es apto para todas las edades?
+    - ¿Es recomendable visitar el museo con la familia?
+    - ¿El museo es interesante para los estudiantes?
+    - ¿El museo tiene actividades para los más pequeños?
+    - ¿Cuál es la edad recomendada para visitar el museo?
+    - ¿El museo es adecuado para aficionados al arte?
+    - ¿El museo es atractivo para turistas extranjeros?
+    - ¿Es necesario tener conocimientos previos para visitar el museo?
+    - ¿El museo es atractivo para los amantes de la cultura local?
+    - ¿El museo es recomendable para los artistas?
+    - ¿El museo es adecuado para los visitantes extranjeros?
+    - ¿El museo es atractivo para los aficionados a la pintura?
+    - ¿El museo tiene contenido relacionado con la historia local?
+
+- intent: afluencia
+  examples: |
+    - ¿Cuántas personas visitan el museo cada año?
+    - Afluencia
+    - Afluencia de personas
+    - Afluencia de personas al año
+    - Afluencia de visitantes
+    - ¿Cuánta gente visita el museo?
+    - Número de visitantes
+    - Número de visitantes al año
+    - ¿Cuál es el número de visitantes anuales del museo?
+    - Quisiera saber la cifra de visitantes que recibe el museo al año.
+    - ¿El museo registra una gran afluencia de visitantes anualmente?
+    - ¿Podrías darme información sobre la cantidad de personas que visitan el museo?
+    - ¿Cuántos visitantes acuden al museo en un año promedio?
+    - ¿El museo es popular y recibe muchas visitas al año?
+    - ¿Cuál es la estadística de visitantes anuales del museo?
+    - ¿El museo es uno de los destinos más visitados de la ciudad?
+    - ¿El museo ha experimentado un aumento en el número de visitantes en los últimos años?
+    - ¿Cuántos turistas y locales visitan el museo cada año?
+    - ¿El museo se encuentra entre los museos más visitados a nivel nacional o internacional?
+    - ¿La cantidad de visitantes al año ha aumentado o disminuido en comparación con años anteriores?
+    - ¿El museo ha implementado estrategias para atraer a más visitantes?
+    - ¿Cuál es el récord de visitantes anuales del museo?
+    - ¿La cantidad de visitantes varía según las exposiciones o eventos especiales?
+    - ¿El museo ha realizado campañas de promoción para aumentar la cantidad de visitantes?
+    - ¿El museo ofrece descuentos o promociones para atraer a más personas?
+    - ¿Cuántos turistas extranjeros visitan el museo cada año?
+    - ¿El museo ha establecido alianzas con otras instituciones para aumentar la cantidad de visitantes?
+    - ¿La cantidad de visitantes anuales del museo es un indicador de su impacto cultural?
+    - ¿El museo ha realizado mejoras en sus instalaciones para recibir a más visitantes?
+    - ¿Cuántas personas en promedio visitan el museo en un día o mes?
+    - ¿La cantidad de visitantes anuales del museo refleja la relevancia de su colección y exposiciones?
+    - ¿El museo cuenta con datos precisos sobre la cantidad de visitantes anuales?
+    - ¿La cantidad de visitantes al año afecta la calidad de la experiencia de los visitantes?
+    - ¿El museo ha implementado tecnologías o sistemas para contabilizar la cantidad de visitantes?
+    - ¿La cantidad de visitantes anuales del museo ha superado las expectativas de la institución?
+    - ¿El museo tiene previsiones de crecimiento en la cantidad de visitantes para los próximos años?
+    - ¿El museo ha recibido reconocimientos o premios por su cantidad de visitantes
+
+- intent: fotos
+  examples: |
+    - Puedo tomar fotos
+    - Fotos
+    - Fotografías
+    - ¿Están permitidas las fotos?
+    - Quiero hacer fotos
+    - Dejáis hacer fotos?
+    - Fotos con flash
+    - Flash
+    - Fotos sin flash
+    - Cámaras
+    - Soy libre de hacer fotos
+    - Podría hacer fotografías
+    - ¿Están prohibidas las fotografías?
+    - Cámaras de fotos
+    - Están permitidas las cámaras?
+    - Puedo llevar mi cámara?
+    - Puedo hacer fotos con el móvil?
+    - ¿Se permite tomar fotos en el museo?
+    - ¿Está permitido hacer fotografías dentro del museo?
+    - ¿Puedo hacer fotos durante mi visita al museo?
+    - ¿Hay restricciones para tomar fotografías en el museo?
+    - ¿El museo permite el uso de cámaras fotográficas?
+    - ¿Existe alguna política sobre la fotografía en el museo?
+    - ¿Puedo tomar fotos de las exposiciones en el museo?
+    - ¿Se permite el uso de flash al hacer fotos en el museo?
+    - ¿Hay áreas específicas donde no se pueden hacer fotos en el museo?
+    - ¿Puedo publicar las fotos del museo en redes sociales?
+    - ¿Se permiten selfies?
+    - ¿Puedo hacerme selfies?
+    - Selfies
+    - ¿El museo tiene alguna política de derechos de autor para las fotografías tomadas?
+    - ¿Puedo solicitar permiso especial para tomar fotos en el museo con fines comerciales?
+    - ¿Existe algún límite de tiempo para tomar fotos en el museo?
+    - ¿El museo cuenta con personal que pueda responder preguntas sobre la fotografía?
+    - ¿Se permite el uso de trípodes o equipos profesionales de fotografía en el museo?
+    - ¿Existen restricciones para tomar fotos dentro del museo?
+    - ¿Se permite la grabación de videos en el museo?
+
+- intent: normas
+  examples: |
+    - ¿Cuáles son las normas del museo?
+    - Normas
+    - Normativa
+    - Quiero saber las normas
+    - Háblame de las normas
+    - Qué normas hay?
+    - Hay normas?
+    - Cuéntame las normas
+    - Prohibido
+    - Prohibiciones
+    - Qué no puedo hacer?
+    - Información sobre las normas
+    - Reglas
+    - Hay reglas?
+    - ¿Hay alguna regla específica?
+    - ¿Cuál es el código de conducta del museo?
+    - Código de conducta
+    - ¿Existen restricciones en cuanto al uso de dispositivos electrónicos en el museo?
+    - Restricciones
+    - Puedo usar el móvil
+    - ¿Puedo llevar alimentos o bebidas al museo?
+    - ¿Está permitido tocar las obras de arte en el museo?
+    - Puedo tocar los cuadros
+    - ¿Cuál es la política de seguridad del museo?
+    - ¿Se permite el ingreso de mochilas o bolsos grandes al museo?
+    - ¿Cuál es la política de acceso para personas con discapacidad en el museo?
+    - ¿Hay normas específicas para los niños que visitan el museo?
+    - ¿Hay restricciones en cuanto al uso de teléfonos móviles o dispositivos electrónicos en el museo?
+    - ¿Se permite la entrada de mascotas o animales de compañía al museo?
+    - Mascotas
+    - Perros
+    - Perros guía
+    - Están permitidos los animales
+    - Animales
+    - Puedo entrar con mi perro
+    - ¿Cuál es la política de ingreso para grupos o visitas guiadas en el museo?
+    - ¿Está permitido fumar en las instalaciones del museo?
+    - ¿Hay áreas designadas para descansar o sentarse dentro del museo?
+    - ¿Cuál es la política de acceso para personas mayores o de movilidad reducida?
+    - ¿Se permite el ingreso de carritos de bebé o cochecitos al museo?
+    - ¿Cuál es la política de ingreso para estudiantes o grupos escolares en el museo?
+    - ¿Está permitido hablar por teléfono o hacer llamadas dentro del museo?
+    - ¿Está permitido ingresar con paraguas u objetos punzantes al museo?
+    - ¿Cuál es la política de acceso para grupos de turistas o visitantes extranjeros en el museo?
+
+- intent: tienda
+  examples: |
+    - ¿Hay una tienda de regalos en el museo?
+    - Tienda
+    - Tienda de regalos
+    - Regalos
+    - Souvenir
+    - Shop
+    - Boutique
+    - ¿Existe una tienda de regalos?
+    - Tienda de recuerdos
+    - ¿Puedo comprar souvenirs en el museo?
+    - ¿El museo tiene tienda de regalos?
+    - ¿Dónde puedo encontrar una tienda para comprar artículos relacionados con el museo?
+    - ¿Hay algún lugar donde pueda comprar objetos conmemorativos del museo?
+    - ¿Existe una tienda de regalos dentro del museo?
+    - Productos temáticos del museo
+    - ¿Dónde puedo comprar artículos únicos relacionados con las exposiciones del museo?
+    - ¿El museo cuenta con una boutique o tienda de regalos?
+    - ¿Existe una tienda de regalos donde pueda encontrar productos exclusivos del museo?
+    - ¿Dónde puedo comprar obras de arte o reproducciones de las exhibidas en el museo?
+    - ¿El museo ofrece productos personalizados o artículos únicos en su tienda de regalos?
+    - ¿Hay alguna tienda de recuerdos?
+    - Tiene una tienda de regalos?
+
+- intent: cafeteria
+  examples: |
+    - Cafetería
+    - Bar
+    - Restaurante
+    - Café
+    - ¿Hay cafetería?
+    - ¿Hay bar?
+    - ¿Hay restaurante?
+    - Puedo beber?
+    - Cerveza
+    - Venden cerveza?
+    - Algo de comer
+    - Venden comida?
+    - ¿El museo tiene bar?
+    - Comer en el museo
+    - Comida museo
+    - Bebida museo
+    - Existe un restaurante en el museo?
+    - Puedo ir a comer al museo?
+    - Beber en el museo
+    - El museo cuenta con una cafetería?
+    - Quiero saber si en el museo hay bar
+    - Tiene cafetería el museo?
+    - Tiene restaurante?
+    - Tiene bar?
+
+- intent: edificio
+  examples: |
+    - ¿Cuál es la historia del edificio que alberga el museo?
+    - Edificio
+    - En qué edificio está el museo
+    - Cual es el edificio del museo
+    - Hablame del museo
+    - Qué historia tiene el edificio del museo?
+    - De quién era el edificio del museo?
+    - Quién vivió en el edificio donde está el museo?
+    - Nombre del edificio del museo
+    - Año de construcción
+    - Construcción
+    - Historia del edificio
+    - Edificio histórico
+    - Quiero saber sobre el edificio
+    - Cuéntame algo del edificio del museo
+    - Qué era antes el museo?
+    - Qué había antes del museo en el edificio?
+    - ¿A quién pertenecía el edificio en el que se encuentra el museo?
+    - ¿Puedes darme información sobre la arquitectura del edificio del museo?
+    - ¿Cuándo fue construido el edificio que actualmente alberga el museo?
+    - ¿Cuál es la importancia histórica del edificio que aloja el museo?
+    - ¿Hay alguna anécdota interesante sobre la construcción del edificio del museo?
+    - ¿Qué estilos arquitectónicos se reflejan en el diseño del edificio del museo?
+    - ¿El edificio ha sido modificado o renovado a lo largo de los años?
+    - ¿Cuál es la relación entre el edificio y la temática del museo?
+    - ¿Qué funciones tuvo el edificio antes de convertirse en un museo?
+    - ¿Cuál es el significado cultural o simbólico del edificio que alberga el museo?
+    - ¿El edificio ha sido declarado patrimonio histórico o protegido por su valor arquitectónico?
+    - ¿Cuál es la relación entre la ubicación del edificio y la temática del museo?
+    - ¿El edificio ha sido utilizado con otros propósitos antes de convertirse en un museo?
+    - ¿Existen fotografías o documentos que muestren la evolución del edificio del museo a lo largo del tiempo?
+    - ¿Hay alguna historia interesante o anécdota relacionada con los antiguos propietarios del edificio del museo?
+    - ¿El edificio cuenta con características arquitectónicas únicas o elementos decorativos destacados?
+    - ¿Cuál es la relación entre la historia del edificio y las colecciones exhibidas en el museo?
+    - ¿La propiedad del edificio ha cambiado?
+    - Vida del edificio
+    - Historia del museo
+    - Cuándo abrió el museo
+    - Inauguración del museo
+    - Vida del museo
+    - Cuando abrió sus puertas el museo
+    - En qué año se fundó el museo
+    - Año de fundación del museo
+    - Fundación
+    - Fundación del museo
+    - Cronología
+    - Cronología del museo
+    - El museo a través del tiempo
+
+- intent: financiacion
+  examples: |
+    - ¿A quién pertenece el museo?
+    - Dueño del museo
+    - Propiedad del museo
+    - Dueños del museo
+    - Quién dirige el museo
+    - Empresa privada
+    - Financiación privada
+    - Financiación
+    - Financiación pública
+    - Museo público
+    - ¿El museo es público?
+    - ¿El museo pertenece al Estado?
+    - ¿Es un museo privado?
+    - ¿Es privado?
+    - Propietarios
+    - Público o privado
+    - Ibercaja
+    - Fundación Ibercaja
+    - Quiénes son los propietarios del museo
+    - ¿Quién es el propietario del museo?
+    - ¿Es el museo propiedad del gobierno?
+    - ¿El museo es de propiedad privada o pública?
+    - ¿Cuál es la entidad responsable del museo?
+    - ¿Quién administra y dirige el museo?
+    - ¿Existe una organización o fundación que posea el museo?
+    - ¿El museo pertenece a alguna institución cultural o educativa?
+    - ¿Quién es el responsable legal del museo?
+    - ¿Cuál es la relación del museo con el gobierno local o regional?
+    - ¿El museo ha recibido donaciones o legados de particulares?
+    - ¿El museo tiene autonomía en sus decisiones y gestión?
+    - ¿El museo ha pasado por cambios de propiedad en el pasado?
+    - ¿El museo es financiado en su totalidad por entidades públicas?
+    - ¿Recibe el museo financiamiento de entidades privadas?
+    - ¿El museo depende de donaciones o patrocinios para su financiamiento?
+    - ¿Cuál es la principal fuente de financiamiento del museo?
+    - Financiación
+    - Quién financia el museo
+    - Cómo se financia el museo
+
+- intent: apertura
+  examples: |
+    - ¿En qué año se inauguró el museo?
+    - apertura
+    - Inauguración
+    - Año de apertura
+    - Año de inauguración
+    - fecha de apertura
+    - Cuándo abrió el museo?
+    - ¿Cuál es la fecha de apertura del museo?
+    - ¿Desde cuándo está abierto el museo?
+    - ¿Hace cuánto tiempo se fundó el museo?
+    - ¿Cuándo se estableció el museo por primera vez?
+    - ¿En qué año comenzó a funcionar el museo?
+    - ¿Cuál fue el año de inicio de actividades del museo?
+    - ¿Desde cuándo existe el museo?
+    - ¿En qué año se abrieron las puertas del museo?
+    - ¿Cuánto tiempo ha pasado desde la inauguración del museo?
+    - ¿Cuál es el aniversario de fundación del museo?
+    - ¿Cuántos años de historia tiene el museo?
+    - ¿Cuándo se llevó a cabo la inauguración oficial del museo?
+    - ¿Cuándo se realizó la inauguración del museo?
+
+- intent: colecciones
+  examples: |
+    - ¿Qué cuadros hay en el museo?
+    - Cuadros
+    - Qué ver
+    - Qué cuadros hay?
+    - Dime los cuadros del museo
+    - Qué cuadros puedo ver?
+    - ¿Qué cosas puedo ver?
+    - ¿Qué puedo ver?
+    - Cuadros disponibles
+    - ¿Cuáles son las obras destacadas del museo?
+    - Obras
+    - Qué obras ver
+    - Dime las obras del museo
+    - Obras disponibles
+    - ¿Qué obras puedo ver?
+    - Obras destacadas
+    - ¿Puedes mencionar algunas de las colecciones del museo?
+    - Colección
+    - Colecciones
+    - Colecciones del museo
+    - Colecciones disponibles
+    - ¿Qué colecciones alberga el museo?
+    - ¿Qué colecciones puedo ver?
+    - ¿Qué colecciones hay?
+    - ¿Qué tipo de arte se exhibe en el museo?
+    - ¿El museo cuenta con obras de artistas reconocidos?
+    - Artistas
+    - Qué artistas hay en el museo
+    - De qué pintor son las obras del museo?
+    - Pintores
+    - Qué pinturas hay
+    - Pinturas disponibles
+    - Cuadros famosos
+    - Obras famosas
+    - Colecciones famosas
+    - Pinturas famosas
+    - ¿Hay alguna pintura famosa en el museo?
+    - ¿Qué arte se exhibe?
+    - ¿El museo tiene alguna colección especializada?
+    - ¿Hay esculturas en el museo?
+    - Escultura
+    - Esculturas disponibles
+    - Qué esculturas puedo ver
+    - Qué esculturas hay?
+    - Obra maestra
+    - ¿Qué artistas tienen obras en el museo?
+    - ¿Cuál es la pieza más valiosa del museo?
+    - ¿El museo tiene exposiciones temporales?
+    - Exposición
+    - Exposiciones
+    - Exposiciones temporales
+    - ¿Cuántas obras de arte hay en el museo?
+    - ¿El museo exhibe fotografías o grabados?
+    - Colección de grabados
+    - ¿Qué grabados hay?
+    - ¿Cuántos grabados hay en el museo?
+    - ¿Cuál es la obra más famosa del museo?
+    - ¿El museo tiene alguna pintura icónica?
+    - ¿Hay alguna escultura famosa en el museo?
+    - ¿El museo cuenta con arte de diferentes épocas?
+    - ¿Hay obras de artistas locales en el museo?
+    - ¿Cuál es la obra más emblemática del museo?
+    - ¿Hay obras de arte famosas a nivel internacional en el museo?
+
+- intent: actividades
+  examples: |
+    - ¿Qué tipo de actividades ofrece el museo?
+    - Actividades
+    - Actividad
+    - Actividades para niños
+    - Qué actividades hay?
+    - Qué actividades se ofertan?
+    - Actividades gratuitas
+    - Actividades de pago
+    - ACtividades para colegios
+    - ¿Hay actividades?
+    - Actividades culturales
+    - ¿Cuáles son las actividades culturales del museo?
+    - ¿Hay talleres o clases en el museo?
+    - ¿El museo organiza actividades?
+    - ¿Se realizan actividades en el museo?
+    - Programas educativos para niños
+    - ¿El museo organiza actividades para familias?
+    - ¿Hay actividades para personas con discapacidad en el museo?
+    - ¿El museo organiza eventos nocturnos o especiales?
+    - ¿Se realizan actividades al aire libre en el museo?
+    - ¿El museo organiza actividades para estudiantes o grupos escolares?
+    - ¿El museo ofrece programas de formación en artes plásticas o visuales?
+
+- intent: virtual
+  examples: |
+    - ¿El museo ofrece visitas virtuales?
+    - Visita virtual
+    - Virtual
+    - Online
+    - Museo online
+    - Museo virtual
+    - Visita online
+    - ¿Puedo hacer una visita virtual al museo?
+    - Quiero hacer la visita virtual
+    - Cómo hago la visita virtual?
+    - ¿Dónde accedo a la visita virtual?
+    - ¿Hay recorridos online?
+    - ¿El museo tiene una experiencia virtual?
+    - ¿Puedo explorar el museo de forma virtual?
+    - ¿Existe una opción de visita virtual al museo?
+    - ¿El museo cuenta con una plataforma de visita virtual?
+    - ¿Se puede acceder a las colecciones del museo de manera virtual?
+    - ¿El museo ofrece una experiencia virtual?
+    - ¿Puedo recorrer las salas del museo a través de internet?
+    - ¿Hay una opción de tour virtual por el museo desde mi casa?
+    - ¿El museo tiene un sitio web con visitas virtuales?
+    - ¿Puedo ver las obras del museo online?
+    - ¿Existe una versión virtual de la exposición del museo?
+    - ¿El museo ofrece una plataforma de visita virtual?
+    - ¿Puedo acceder a las actividades del museo de forma virtual?
+    - ¿Hay una opción de visita virtual al museo?
+    - ¿El museo cuenta con una galería virtual en su página web?
+    - ¿Puedo explorar las obras de arte del museo desde internet?
+    - ¿Existe una herramienta de realidad virtual para visitar el museo?
+    - ¿El museo ofrece un recorrido interactivo en línea?
+    - Realidad virtual
+    - Recorrido interactivo
+
+- intent: plano
+  examples: |
+    - ¿Dónde puedo encontrar el plano del museo?
+    - ¿Hay un mapa del museo?
+    - Plano
+    - Mapa
+    - Mapa del museo
+    - Plantas
+    - ¿Cuántas plantas hay?
+    - Qué ver en cada planta
+    - Qué ver en cada piso
+    - Pisos
+    - Qué hay en cada piso?
+    - ¿Cada planta está dedicada a una exposición diferente?
+    - ¿En qué planta están los grabados?
+    - ¿En qué planta están las pinturas?
+    - Distribución
+    - Distribución de exposiciones
+    - Salas
+    - Distribución de las salas
+    - ¿Cuántas salas hay?
+    - Número de salas
+    - ¿Cómo es el museo por dentro?
+    - Museo por dentro
+    - Cómo es por dentro
+    - Por dentro
+    - ¿Puedo obtener un plano con la distribución de las exposiciones?
+    - ¿El museo tiene un plano de las diferentes plantas?
+    - ¿Dónde puedo consultar el plano de cada planta del museo?
+    - ¿Existe un plano que muestre la ubicación de las exposiciones?
+    - ¿Puedo obtener un plano detallado de las salas y galerías del museo?
+    - ¿Dónde puedo encontrar información sobre la distribución de las exposiciones?
+    - ¿Hay un plano impreso del museo que pueda llevar conmigo durante la visita?
+    - ¿Existe un plano en línea que muestre la ubicación de cada exposición?
+    - ¿Puedo obtener un plano con indicaciones para encontrar cada sala del museo?
+    - ¿El museo cuenta con un plano que indique los puntos de interés destacados?
+    - ¿Existe un plano en el que se indique la ubicación de las obras más importantes?
+    - ¿El museo ofrece un plano detallado con información sobre cada sala y colección?
+    - ¿Dónde puedo encontrar un plano que me ayude a planificar mi visita al museo?
+    - Itinerario
+    - Itinerario recomendado
+    - Qué itinerario seguir
+    - ¿Puedo obtener un plano que me oriente sobre la ruta a seguir para ver todas las obras?
+    - ¿Existe un plano en el que se indique la ubicación de las obras más famosas?
+    - ¿Puedo obtener un plano detallado que muestre la distribución de las exposiciones actuales?
+    - ¿Dónde puedo encontrar un plano que me ayude a seguir un itinerario recomendado?
+    - Ruta sugerida
+    - Ruta
+    - Ruta recomendada
+    - Qué ruta seguir
+    - Recorrido
+    - Qué recorrido seguir
+
+- intent: boletin
+  examples: |
+    - ¿El museo tiene un boletín informativo?
+    - Boletín
+    - Boletín informativo
+    - Quiero leer el boletín informativo
+    - Quiero leer el boletín
+    - Revista
+    - Revista del museo
+    - Quiero publicar en la revista del museo
+    - Quiero publicar en el boletín
+    - Cómo publicar en el boletín
+    - ¿Cómo puedo suscribirme al boletín del museo?
+    - Newsletter del museo
+    - Estudios
+    - Artículos de la revista
+    - ¿Dónde puedo encontrar información sobre el boletín del museo?
+    - ¿El museo ofrece un boletín con noticias y eventos destacados?
+    - Edición del boletín
+    - Últimos tomos del boletín
+    - Tomos de la revista
+    - Publicaciones
+    - Publicaciones del boletín
+    - ¿Dónde puedo encontrar las últimas ediciones del boletín informativo del museo?
+    - ¿Dónde puedo encontrar el archivo de ediciones anteriores del boletín informativo del museo?
+
+- intent: vida
+  examples: |
+    - Goya
+    - Háblame de Goya
+    - Francisco de Goya
+    - Háblame de ti
+    - Información sobre Goya
+    - Vida de Goya
+    - ¿Puedes contarme algo sobre Goya?
+    - Quiero saber sobre Goya
+    - Cuéntame la vida de Goya
+    - Biografía de Goya
+    - Resumen de la vida de Goya
+    - Su vida
+    - ¿Puedes proporcionarme información acerca de la vida de Goya?
+    - Quiero saber más sobre la historia personal de Goya
+    - Resumen biográfico
+    - ¿Qué eventos importantes marcaron la vida de Goya?
+    - ¿Cómo vivió Goya?
+    - ¿Cómo fue la vida de Goya?
+    - Bio de Goya
+    - Resumen de Goya
+    - Resumen de su vida
+    - Resumen de tu vida
+    - Me puedes resumir la vida de Goya
+
+- intent: juventud
+  examples: |
+    - ¿Cómo fue la juventud de Goya?
+    - Infancia
+    - Infancia de Goya
+    - Juventud
+    - Juventud de Goya
+    - Etapa temprana
+    - Temprana
+    - Goya en Zaragoza
+    - Etapa en Zaragoza
+    - Primera etapa
+    - Vida temprana
+    - Vida temprana en Zaragoza
+    - En Zaragoza
+    - Zaragoza
+    - Etapa joven
+    - Primeros años
+    - Inicios de Goya
+    - Me interesa saber más sobre la infancia de Goya
+    - Explícame la vida temprana de Goya
+    - ¿Qué se sabe sobre la juventud de Goya?
+    - ¿Cuáles fueron las experiencias más importantes de Goya durante su juventud en Zaragoza?
+    - ¿Qué influencias artísticas recibió Goya en Zaragoza?
+    - Obras de juventud de Goya en Zaragoza
+    - Vida temprana de Goya en Zaragoza
+    - Primeros pasos artísticos
+    - Oportunidades artísticas durante su juventud
+    - Primeros logros de Goya
+    - ¿Cuál fue el contexto histórico y cultural en el que creció Goya en Zaragoza?
+    - Juventud contexto
+    - Infancia contexto
+    - ¿Qué se sabe sobre los primeros años de formación artística de Goya en Zaragoza?
+    - ¿Cuál fue el entorno familiar de Goya durante su infancia en Zaragoza?
+
+- intent: italia
+  examples: |
+    - Italia
+    - Estanica en Italia
+    - Goya en Italia
+    - Cuándo fue Goya a Italia
+    - Por qué fue Goya a Italia
+    - Dónde fue Goya a Italia
+    - Roma
+    - Goya en Roma
+    - ¿Goya fue a Roma?
+    - ¿Estuvo en Roma?
+    - Me gustaría saber más sobre la estancia de Goya en Italia.
+    - ¿Cuándo y dónde estuvo Goya en Italia?
+    - Háblame de la experiencia de Goya en Italia.
+    - ¿Qué influencias artísticas recibió Goya en Italia?
+    - ¿Cómo influyó la estancia en Italia en el estilo y la técnica de Goya?
+    - ¿Cuáles fueron los artistas o movimientos artísticos que más impactaron a Goya en Italia?
+    - ¿Qué aspectos de la cultura italiana se reflejan en la obra de Goya después de su estancia?
+    - ¿Dónde puedo encontrar referencias a la estancia de Goya en Italia en su obra?
+    - ¿Se han realizado estudios sobre la estancia de Goya en Italia?
+    - ¿Cuál fue el impacto de Italia en la carrera y el desarrollo artístico de Goya?
+    - ¿Qué obras o influencias específicas de Italia se pueden apreciar en las creaciones de Goya?
+    - ¿Qué lugares o ciudades italianas visitó Goya durante su estancia en el país?
+    - ¿Cuál fue la relación de Goya con otros artistas italianos durante su tiempo en Italia?
+    - ¿Cómo afectó la estancia en Italia al enfoque temático de las obras de Goya?
+    - ¿Existen testimonios o documentos escritos por Goya sobre su experiencia en Italia?
+    - ¿Cuáles fueron los desafíos que Goya enfrentó durante su estancia en Italia?
+    - ¿Se han estudiado las influencias italianas en las obras y estilo de Goya en detalle?
+    - ¿Cuáles fueron los principales aprendizajes o descubrimientos de Goya durante su estancia en Italia?
+    - ¿Qué críticas o reconocimientos recibió Goya durante su estancia en Italia?
+    - ¿Cuál fue la relación entre Goya y las instituciones artísticas italianas durante su estancia?
+    - ¿Qué se sabe sobre la vida de Goya en Italia?
+
+- intent: madrid
+  examples: |
+    - Éxito en la corte de Madrid
+    - Madrid
+    - Goya en Madrid
+    - Estancia en Madrid
+    - Estancia de Goya en Madrid
+    - Vida en Madrid
+    - Éxito en la corte
+    - Corte
+    - Goya en la corte
+    - Goya en palacio
+    - Corte de Carlos III
+    - Goya y Carlos III
+    - Carlos III
+    - Goya en la corte de Carlos III
+    - ¿Cuál fue el papel de Goya en la corte?
+    - Papel de Goya en la corte
+    - Háblame sobre la relación de Goya con la corte.
+    - Goya y corte
+    - ¿Cómo influyó la corte en la carrera artística de Goya?
+    - ¿Cuáles fueron las obras más destacadas que Goya realizó para la corte?
+    - ¿Qué reconocimientos o títulos recibió Goya por su trabajo en la corte?
+    - ¿Cómo afectó la corte al estilo y temática de las obras de Goya?
+    - ¿Cuál fue el impacto de la corte en el reconocimiento y prestigio de Goya?
+    - ¿Qué aspectos de la vida en la corte se reflejan en las creaciones de Goya?
+    - ¿Qué relaciones y amistades importantes tuvo Goya en la corte?
+    - ¿Cómo evolucionó el estilo y la técnica de Goya durante su tiempo en la corte?
+    - Obras artísticas de Goya en la corte
+    - ¿Cuáles fueron los principales logros y contribuciones de Goya en la corte?
+
+- intent: enfermedad
+  examples: |
+    - Enfermedad
+    - Crisis
+    - Sordera
+    - Etapa de crisis y enfermedad
+    - Crisis y enfermedad
+    - Enfermedad de Goya
+    - Sordera de Goya
+    - Sordo
+    - Goya sordo
+    - ¿Cómo se volvió Goya sordo?
+    - Causas de la sordera
+    - Por qué Goya perdió la audición
+    - Problemas de audición
+    - Motivos de la sordera de Goya
+    - Qué hizo que Goya quedase sordo
+    - Cómo acabó sordo Goya
+    - Qué le pasó a Goya para ser sordo
+    - ¿Era sordo de nacimiento?
+    - Explicación de la sordera
+    - Pérdida auditiva
+    - Pérdida de audición
+    - Problemas auditivos
+    - Enfermedad auditiva
+    - ¿Qué le pasaba a Goya?
+    - ¿Qué enfermedad tenía Goya?
+    - ¿Por qué enfermó Goya?
+    - ¿Cómo se llama la enfermedad de Goya?
+    - ¿Se curó Goya de la sordera?
+    - Se recuperó de su enfermedad
+    - ¿Volvió a oír?
+    - ¿Dejó de ser sordo?
+    - ¿Se curó la sordera?
+    - Crisis de Goya
+    - Cómo afectó la sordera a su arte
+    - Sordera y pintura
+    - Relación entre la sordera y sus obras
+    - Cuándo quedó sordo Goya
+    - ¿Cuándo dejó de oír?
+
+- intent: guerra
+  examples: |
+    - Guerra
+    - Guerra de independencia
+    - Guerra de la Independencia
+    - Independencia
+    - Guerra y Goya
+    - Goya en la guerra de la independencia
+    - Relación de Goya con la guerra
+    - Impacto de la guerra en Goya
+    - Influencia de la guerra en la obra de Goya
+    - Guerra y arte
+    - Guerra contra Francia
+    - Guerra contra los franceses
+    - Qué fue de Goya durante la guerra
+    - Qué hizo Goya durante la guerra
+    - ¿Goyá luchó en la guerra?
+    - ¿Participó Goya en las batallas?
+    - ¿Goya luchó contra los franceses?
+    - Liberales
+    - ¿Goya era liberal?
+    - Ilustración
+    - Ilustrado
+    - ¿Goya iba con los franceses?
+    - ¿Goya era ilustrado?
+    - Exilio
+    - A dónde se exilió Goya
+    - Adonde fue Goya exiliado
+    - Goya exiliado
+    - Exilio de Goya
+    - ¿Dónde fue Goya tras la guerra?
+    - ¿Por qué se exilió Goya?
+    - Por qué se fue Goya de España
+    - Exilio a Francia
+    - Goya en Francia
+    - Francia
+    - ¿Goya fue obligado a exiliarse?
+    - Motivos del exilio
+    - Razones del exilio
+    - Causas del exilio
+    - Etapa de guerra y exilio
+    - Guerra y exilio
+    - Última etapa
+    - Últimos años de vida
+    - ültimos años de Goya
+
+- intent: nacimiento
+  examples: |
+    - Nacimiento
+    - Lugar de nacimiento
+    - Fecha de nacimiento
+    - ¿Cuándo nació Goya?
+    - ¿Dónde nació Goya?
+    - ¿Cuál es el lugar de nacimiento de Goya?
+    - Háblame sobre el lugar donde Goya nació.
+    - ¿En qué ciudad o pueblo nació Goya?
+    - ¿Goya nació en Zaragoza?
+    - ¿Goya es aragonés?
+    - ¿Goya es maño?
+    - ¿Goya nació en Fuendetodos?
+    - ¿Goya nació en Zaragoza?
+    - ¿Cuál es la fecha de nacimiento de Goya?
+    - Háblame sobre la fecha en la que nació Goya.
+    - ¿En qué año nació Goya?
+    - Fecha de nacimiento de Goya
+    - Día de nacimiento
+    - ¿Qué día nació?
+    - Nacionalidad
+    - Natalidad
+
+- intent: muerte
+  examples: |
+    - ¿Cuándo murió Goya?
+    - Muerte
+    - Fallecimiento
+    - Cuándo fallece Goya
+    - En qué fecha murió Goya
+    - Día de la muerte de Goya
+    - ¿Cuál es la fecha de fallecimiento de Goya?
+    - Háblame sobre la fecha en la que murió Goya
+    - ¿En qué año falleció Goya?
+    - ¿Dónde falleció Goya?
+    - ¿En qué lugar murió Goya?
+    - Háblame del sitio donde Goya falleció.
+    - ¿Cuál fue el lugar de su fallecimiento?
+    - ¿Dónde ocurrió el fallecimiento de Goya?
+    - ¿En qué ciudad o país ocurrió su muerte?
+    - ¿Puedes decirme dónde Goya murió?
+    - ¿Me puedes informar sobre el sitio donde Goya perdió la vida?
+    - ¿Cuál fue el destino final de Goya?
+    - ¿En qué lugar encontramos el desenlace de la vida de Goya?
+    - ¿Cuál es el sitio donde Goya dejó de existir?
+    - ¿En qué ubicación Goya dio su último aliento?
+    - ¿Dónde se encuentra el lugar de su fallecimiento?
+    - ¿Puedes decirme el sitio exacto donde Goya falleció?
+    - ¿En qué parte del mundo terminó la vida de Goya?
+    - ¿Cuál fue el sitio donde Goya cerró los ojos para siempre?
+    - ¿Cómo murió Goya?
+    - Causa de la muerte
+    - ¿Cömo murió?
+    - Muerte de Goya
+    - ¿Cuál fue la causa de la muerte de Goya?
+    - Háblame sobre cómo falleció Goya.
+    - ¿Cuál fue el motivo de su fallecimiento?
+    - ¿De qué manera ocurrió la muerte de Goya?
+    - ¿Puedes decirme la forma en que Goya perdió la vida?
+    - ¿Cuál fue la circunstancia que llevó a la muerte de Goya?
+    - ¿Qué suceso o enfermedad provocó el fallecimiento de Goya?
+    - ¿Me puedes informar sobre la causa exacta de la muerte de Goya?
+    - ¿En qué condiciones se produjo la muerte de Goya?
+    - ¿Cuál fue el desenlace que llevó a la muerte de Goya?
+    - ¿Qué factores contribuyeron al fallecimiento de Goya?
+    - ¿Cuál fue la razón que condujo al fallecimiento de Goya?
+    - ¿Puedes decirme qué ocurrió para que Goya muriera?
+    - ¿Qué se sabe sobre la forma en que Goya encontró la muerte?
+    - ¿Cuál fue la causa médica o natural de la muerte de Goya?
+    - ¿Existen detalles o testimonios que expliquen cómo murió Goya?
+    - ¿En qué situación o contexto tuvo lugar la muerte de Goya?
+
+- intent: quinta
+  examples: |
+    - Quinta
+    - Quinta del sordo
+    - Casa del sordo
+    - Casa de Goya
+    - Quinta de Goya
+    - ¿Cuándo se construyó la quinta del sordo?
+    - De qué año es la quinta del sordo
+    - Historia de la Quinta del sordo
+    - Háblame de la Quinta del sordo
+    - Qué sabes de la quinta del sordo
+    - ¿Por qué es importante la quinta del sordo?
+    - Importancia de la quinta del sordo
+    - De quien era la quinta del sordo
+    - ¿Dónde queda la Quinta del Sordo?
+    - Ubicación Quinta del sordo
+    - Localización Quinta del sordo
+    - Visita Quinta del Sordo
+    - ¿Existe la Quinta del sordo?
+    - Quiero ver la Quinta del sordo
+    - ¿Cuál es el lugar de la Quinta del Sordo?
+    - Háblame del sitio donde está la Quinta del Sordo.
+    - ¿En qué dirección se encuentra la Quinta del Sordo?
+    - ¿Puedes decirme dónde está ubicada la Quinta del Sordo?
+    - ¿Me puedes informar sobre la localización exacta de la Quinta del Sordo?
+    - ¿En qué parte del mundo está la Quinta del Sordo?
+    - ¿Dónde se localiza la propiedad de Goya conocida como la Quinta del Sordo?
+    - ¿Cuál es la dirección física de la Quinta del Sordo?
+    - ¿En qué área geográfica está la Quinta del Sordo?
+    - ¿Puedes indicarme la ubicación precisa de la Quinta del Sordo?
+    - ¿Dime en qué lugar se encuentra la Quinta del Sordo?
+    - ¿En qué ciudad o país está la Quinta del Sordo?
+    - ¿Dónde puedo encontrar la Quinta del Sordo?
+    - ¿Cuál es el destino de la Quinta del Sordo?
+    - ¿En qué sitio puedo visitar la Quinta del Sordo?
+
+- intent: familia
+  examples: |
+    - Familia
+    - Familia de Goya
+    - Familiares de Goya
+    - Descendientes de Goya
+    - Descendencia de Goya
+    - Padres de Goya
+    - Papá de Goya
+    - Mamá de Goya
+    - Padre de Goya
+    - Madre de Goya
+    - ¿Quiénes fueron los padres de Goya?
+    - Progenitores
+    - Háblame de los padres de Goya
+    - Qué se sabe de los padres de Goya
+    - Hijos
+    - Hijos de Goya
+    - Hijas
+    - ¿Goya tuvo hijos?
+    - ¿Cuántos hijos tuvo Goya?
+    - Retoños
+    - Esposa
+    - Mujer
+    - ¿Estaba casado Goya?
+    - ¿Goya tenía esposa?
+    - ¿Tenía mujer?
+    - Qué se sabe de la mujer de Goya
+    - Cuándo se casó Goya
+    - Matrimonio de Goya
+    - Nieto
+    - Nietos
+    - ¿Goya tenía nietos?
+    - Herederos de Goya
+    - ¿Cuántos nietos tuvo Goya?
+    - José Benito de Goya y Gracia
+    - María Lucientes y Salvador
+    - Josefa Bayeu y Subías
+    - Francisco Javier Pedro
+    - Mariano Goya y Goicoechea
+
+- intent: legado
+  examples: |
+    - Legado
+    - Legado de Goya
+    - ¿Qué legado dejó Goya?
+    - Influencia de Goya
+    - Impacto de Goya en el arte
+
+- intent: obra
+  examples: |
+    - Obra de Goya
+    - Háblame de la obra de Goya
+    - Háblame del arte de Goya
+    - Qué tipo de arte pintaba Goya
+    - Pintura de Goya
+    - Cuadros de Goya
+    - Qué cuadros pintó GOya
+    - Información sobre el estilo artístico de Goya
+    - Estilo artístico
+    - Corriente artística
+    - Momivimiento artístico
+    - Qué cuadros pintó Goya?
+
+- intent: tecnica
+  examples: |
+    - Técnica
+    - Técnica de Goya
+    - Técnica pictórica
+    - Características
+    - Características artísticas de Goya
+    - ¿Qué caracterizaba a Goya?
+    - ¿Qué características tienen los cuadros de Goya?
+    - ¿Cómo reconozco un Goya?
+    - Pincelada de Goya
+    - Dime las características de la pintura de Goya
+    - ¿Qué es lo más típico del arte de Goya?
+    - Elementos artísticos
+    - Qué elementos artísticos podemos encontrar en el arte de Goya?
+
+- intent: grabados
+  examples: |
+    - Grabados
+    - Grabados de Goya
+    - Serie de grabados
+    - Grabaciones de Goya
+    - Háblame sobre los grabados de Goya
+    - Me gustaría informarme sobre la serie de los grabados de Goya
+    - ¿Qué es un grabado?
+    - ¿Qué son los grabados de Goya?
+    - ¿Cómo se hacen los grabados?
+    - ¿Qué significan los grabados?
+    - ¿Cómo hizo Goya los grabados?
+    - Téncnica de grabado
+    - ¿Cuál es la información sobre los grabados de Goya?
+    - Háblame acerca de las obras grabadas de Goya.
+    - ¿Puedes darme detalles sobre los grabados que hizo Goya?
+    - Quiero saber más sobre los grabados de Goya.
+    - ¿Qué puedes contarme de los grabados famosos de Goya?
+    - Dime sobre las creaciones grabadas de Goya.
+    - Explícame los detalles de los grabados realizados por Goya.
+    - ¿Qué se puede decir sobre las obras grabadas de Goya?
+    - Me interesa conocer los grabados que Goya hizo.
+    - ¿Puedes proporcionarme información sobre los grabados de Goya?
+    - ¿Cuáles son las características de los grabados de Goya?
+    - ¿Qué destacado hay en los grabados de Goya?
+    - Quisiera conocer más sobre los trabajos grabados de Goya.
+    - ¿Cuál es el legado de Goya en sus grabados?
+    - Dime más sobre los grabados y su importancia en la obra de Goya.
+    - ¿Cuál es la temática principal de los grabados de Goya?
+    - Explora los grabados de Goya y sus mensajes ocultos.
+    - ¿Qué impacto tuvieron los grabados de Goya en el arte de la época?
+    - ¿Hay alguna técnica especial utilizada en los grabados de Goya?
+
+- intent: velazquez
+  examples: |
+    - Velázquez
+    - Copias
+    - Copias de Velázquez
+    - Grabados de Velázquez
+    - Qué obras copió Goya de Velázquez
+    - Qué grabados de Goya imitan las obras de Velázquez
+    - Obras de Velázquez
+    - Qué se sabe de los grabados que son copias de obras de Velázquez
+    - ¿Por qué Goya copió a Velázquez?
+    - Grabados copias de Velázquez
+
+- intent: esopo
+  examples: |
+    - Esopo
+    - Grabado de Esopo
+    - Copia de Esopo
+    - Esopoo
+    - Eopo
+    - Esopo Velázquez
+    - El de Esopo
+    - Quién era Esopo
+    - Háblame de Esopo
+    - Del de Esopo
+    - Quiero saber más acerca del grabado de Esopo
+    - ¿Podrías detallarme más sobre la copia de Esopo?
+    - Información sobre Esopo
+
+- intent: olivares
+  examples: |
+    - Olivares
+    - Grabado de Olivares
+    - Duque de Olivares
+    - Condeduque de Olivares
+    - Conde de Olivares
+    - Olivas
+    - Gaspar
+    - Don Gaspar
+    - Gaspar de Guzmán
+    - Guzmán
+    - Don Gaspar de Guzmán
+    - Grabado de Don Gaspar de Guzmán, Duque de Olivares
+    - El del duque
+    - El del duque de Olivares
+    - El de Olivares
+    - Háblame del duque
+    - Quiero saber más acerca del grabado del Duque de Olivares
+    - Información sobre el duque de Olivares
+
+- intent: carlos
+  examples: |
+    - Carlos
+    - Don Carlos
+    - Príncipe
+    - Príncipe Carlos
+    - Carlos de España
+    - Baltasar
+    - Baltasar Carlos
+    - Príncipe Baltasar Carlos
+    - El grabado del príncipe Baltasar Carlos
+    - Príncipe de España
+    - Háblame del grabado del príncipe Carlos
+    - Información sobre el grabado del príncipe Carlos
+    - Quiero saber más del grabado del príncipe carlos
+    - El del príncipe Carlos
+    - El príncipe Baltasar Carlos de España
+
+- intent: caprichos
+  examples: |
+    - Caprichos
+    - Caprichos de Goya
+    - Serie de los caprichos
+    - Grabados de los caprichos
+    - Háblame de los caprichos de goya
+    - Los caprichos
+    - Quiero información sobre los caprichos de goya
+    - Información sobre los caprichos de goya
+    - Qué son los caprichos
+    - Capricho
+
+- intent: abuelo
+  examples: |
+    - Abuelo
+    - Su abuelo
+    - Asta su abuelo
+    - Hasta su abuelo
+    - Godoy
+    - El grabado del asno
+    - El burro
+    - Grabado Asta su abuelo
+    - Abuelo de Godoy
+    - Grabado del burro
+    - Quiero ver el grabado titulado Asta su abuelo
+    - El grabado que se llama Asta su Abuelo
+    - Háblame del grabado que se llama hasta su abuelo
+
+- intent: tu
+  examples: |
+    - Tu que no puedes
+    - No puedes
+    - Que no puedes
+    - Grabado tú que no puedes
+    - Tu que no puedes Goya
+    - Campesinos
+    - El grabado de los campesinos
+    - Tú que no puedes
+    - El de tu que no puedes
+    - hablame de tú que no puedes
+
+- intent: razon
+  examples: |
+    - Sueño
+    - El sueño
+    - El sueño de la razón
+    - El sueño de la razón produce monstruos
+    - La razón produce monstruos
+    - La razón y los monstruos
+    - El grabado del sueño de la razón
+    - El de los monstruos
+    - Información sobre el sueño de la razón
+    - Háblame sobre el sueño de la razón
+    - El grabado del sueño de la razón produce monsturos
+
+- intent: brabisimo
+  examples: |
+    - Brabisimo!
+    - Bravisimo
+    - Bravo
+    - El grabado de brabisimo
+    - El grabado del mono y del asno
+    - Información sobre el grabado brabísimo
+    - Háblame del grabado brabísimo
+    - Brabisimo de Goya
+    - Brabo de Goya
+
+- intent: desastres
+  examples: |
+    - Desastre
+    - Desastres
+    - Desastres de la guerra
+    - Desastres de guerra
+    - Desastres de Goya
+    - Grabados los desastres de la guerra
+    - Los grabados de la guerra
+    - Violencia de los desastres de la guerra
+    - Serie de grabados de los desastres de la guerra
+    - Información sobre los desastres de la guerra
+
+
+- intent: pensamientos
+  examples: |
+    - Pensamientos
+    - Tristes pensamientos
+    - Tristes pensamientos de lo que ha de acontecer
+    - Tristes pensamientos de lo que va a pasar
+    - Pensamientos tristes de Goya
+    - Grabados tristes pensamientos
+    - Háblame del grabado que se llama Tristes pensamientos de lo que ha de acontecer
+    - Grabado tristes pensamientos de lo que ha de acontecer
+    - El de tristes pensamientos de lo que ha de acontecer
+  
+- intent: niporesas
+  examples: |
+    - Ni por esas
+    - El grabado de Ni por esas
+    - Ni por esas Goya
+    - Información sobre el grabado Ni por esas
+    - Háblame de Ni por esas
+    - Quiero saber más sobre el grabado Ni por esas
+    - Ese de Ni por esas
+
+- intent: verdad
+  examples: |
+    - La verdad
+    - Murió la verdad
+    - La verdad murió
+    - La muerte de la verdad
+    - El grabado de murió la verdad
+    - Háblame de Murió la verdad
+    - Información sobre el grabado de Murió la verdad
+    - Más detalles sobre el grabado de Murió la verdad
+
+- intent: tauromaquia
+  examples: |
+    - Tauromaquia
+    - Tauromaquia Goya
+    - Grabados de tauromaquia
+    - Serie de grabados de la tauromaquia
+    - Colecciones de grabados de tauromaquia
+    - Información sobre grabados de la tauromaquia
+    - Los grabados de Goya de la tauromaquia
+    - Espectáculos de tauromaquia Goya
+    - Quiero saber más sobre los grabados de Tauromaquia
+
+- intent: juanito
+  examples: |
+    - Juanito
+    - Juanito Apiñaniz
+    - Ligereza y atrevimiento de Juanito Apiñaniz en la de Madrid
+    - Ligereza
+    - Ligereza y atrevimiento
+    - Atrevimiento de Juanito
+    - Ligereza y atrevimiento de Juanito
+    - Atrevimiento de Juanito Apiñaniz
+    - Juanito Apiñaniz Madrid
+    - Atrevimiento en Madrid
+    - El grabado de Ligereza y atrevimiento de Juanito Apiñaniz
+    - Juanito en la de Madrid
+    - Información sobre el atrevimiento de Juanito Apiñaniz
+
+- intent: desgracias
+  examples: |
+    - Desgracias
+    - Desgracias acaecidas en el tendido de la plaza de Madrid, y muerte del alcalde de Torrejón
+    - Desgracias en la plaza de toros de Madrid
+    - Desgracias acaecidas en Madrid
+    - Desgracias de Goya
+    - Grabado de las desgracias acaecidas en el tendido de la plaza de Madrid
+    - Muerte del alcalde de Torrejón
+    - Torrejón
+    - Alcande de Torrejón
+    - Desgracia y muerte del alcalde de Torrejón en la plaza de Madrid
+
+- intent: pepe
+  examples: |
+    - La desgraciada muerte de Pepe
+    - Muerte de Pepe
+    - Desgraciada muerte de Pepe Goya
+    - La desgraciada muerte de Pepe - Illo en la Plaza de Madrid
+    - Illo
+    - El grabado de la desgraciada muerte de Pepe
+    - Muerte desgraciada de Pepe
+
+- intent: disparates
+  examples: |
+    - Disparates
+    - Los disparates
+    - Disparates de Goya
+    - Háblame de los disparates de Goya
+    - Grabados de la locura
+    - Grabado tontería
+    - Información sobre los disparates de Goya
+    . Me gustaría saber más sobre los disparates
+    - Serie de grabados de los disparates
+    - Colección de los disparates
+
+- intent: femenino
+  examples: |
+    - Disparate femenino
+    - Femenino
+    - Disparate de la mujer
+    - Grabado disparate femenino
+    - Disparate femenino de Goya
+    - Información sobre el disparate femenino
+    - Quiero saber más sobre el disparate feminino
+    - ¿Hay algún disparate femenino?
+    - Disparates con mujeres grabado
+    - El disparate en el que mantean a un bebé
+
+- intent: miedo
+  examples: |
+    - Disparate de miedo
+    - Miedo
+    - El de miedo
+    - Disparate de miedo Goya
+    - Información sobre el disparate de miedo
+    - Quiero saber más sobre el disparate de miedo
+    - ¿Hay algún disparate de miedo?
+    - Me gustaría saber más acerca del disparate de miedo de goya
+
+- intent: volante
+  examples: |
+    - Volante
+    - Disparate volante
+    - Disparate volador
+    - El disparate volante de Goya
+    - Información sobre el disparate volante
+    - Quiero saber más sobre el disparate volante
+    - Me gustaría saber más acerca del disparate volante
+
+- intent: burdeos
+  examples: |
+    - Burdeos
+    - Toros de Burdeos
+    - Colección de grabados toros de Burdeos
+    - Serie de grabados de los toros de Burdeos
+    - Toros de Burdeos Goya
+    - Información sobre los toros de Burdeos
+    - Háblame sobre los toros de burdeos
+    - Quiero saber más acerca de los Toros de Burdeos que hizo Goya
+    - Obras de los toros de Burdeos
+
+- intent: diversion
+  examples: |
+    - Diversión
+    - Dibersión de España
+    - Diversión toros burdeos
+    - Dibersión de España Burdeos
+    - Diversión de España Goya
+    - Información sobre el grabado de Diversión de España
+    - Grabado Dibersión de España
+    - Me gustaría saber más sobre diversión de españa
+
+- intent: americano
+  examples: |
+    - Americano
+    - El famoso americano
+    - El famoso americano de Goya
+    - El famoso americano Mariano Ceballos
+    - Mariano Ceballos
+    - El famoso americano toros de burdeos
+    - El famoso americano Mariano Ceballos Goya
+    - Información sobre el grabado del famoso americano Mariano Ceballos
+    - Me gustaría saber más sobre el famoso americano Goya
+
+- intent: partida
+  examples: |
+    - Plaza partida
+    - Partida
+    - Grabado plaza partida
+    - El grabado de la plaza partida de Goya
+    - Háblame de la plaza partida
+    - Qué era la plaza partida
+    - Información sobre la plaza partida de goya
+    - Me gustaría saber más sobre la plaza partida grabado
+
+- intent: pinturas
+  examples: |
+    - Pinturas
+    - Pinturas de Goya
+    - Pinturas en óleo
+    - Óleo
+    - Pintura
+    - La pintura de Goya
+    - No te estoy preguntando por los grabados sino por las pinturas
+    - Óleos sobre lienzo
+    - Me gustaría saber qué pinturas de Goya puedo ver en el museo
+    - Qué tipo de cuadros pintaba Goya?
+    - Obras destacadas de Goya
+    - Pinturas destacadas
+    - Selección de pinturas destacadas en el museo
+    - Retablos
+    - Esenciales
+    - Pinturas esenciales que ver en el museo
+    - Qué pinturas puedo ver en el museo
+    - Dime qué pinturas puedo encontrar de Goya 
+
+- intent: gloria
+  examples: |
+    - La Gloria o Adoración del nombre de Dios
+    - Gloria
+    - La gloria de Goya
+    - Adroración del nombre de Dios
+    - Nombre de Dios
+    - La gloria y adoración de Goya
+    - Háblame de la pintura de la glora de Goya
+    - Quiero más información sobre la Adoración del nombre de Dios
+    - ¿Qué técnica usa Goya en la Gloria?
+    - Información sobre la gloria y adoración de Dios de Goya
+
+- intent: joaquin
+  examples: |
+    - San Joaquín y Santa Ana
+    - Joaquín
+    - San Joaquín
+    - Ana
+    - Santa Ana
+    - San Joaquín y Santa Ana Goya
+    - Pinturas de San Joaquín y Santa Ana
+    - Háblame de las obras de san joaquín y santa ana
+    - Me gustaría saber más de san joaquín
+    - Información de santa ana goya
+
+- intent: autorretrato
+  examples: |
+    - Autorretrato
+    - Autorretraro de Goya
+    - Retrato de Goya
+    - Alguna vez Goya se autorretrató?
+    - ¿Goya se pintó a sí mismo alguna vez?
+    - Información sobre el autorretrato de Goya
+    - Quiero saber más sobre el autorretrato de Goya
+    - Qué me puedes decir sobre el autorretrato de Goya?
+
+- intent: menipo
+  examples: |
+    - Esopo y Menipo
+    - Menipo
+    - Pintura de Esopo y Menipo
+    - Quiero saber más sobre Menipo
+    - Información sobre Menipo
+    - Háblame de Menipo
+    - Esopo y Menipo Goya
+    - Pintura de Menipo
+    - Me gustaría más información sobre la pintura de Menipo
+    - Quiero saber más sobre el de Menipo
+
+- intent: cistue
+  examples: |
+    - Don José de Cistué y Coll
+    - José Cistué
+    - Cistué y Coll
+    - José de Cistué de Goya
+    - Cuadro sobre José Cistué
+    - Información sobre el retrato de José de Cistué
+    - Háblame más sobre el cuadro de don josé de cistué y coll
+    - Quiero saber más sobre josé de cistué el cuadro que pintó Goya
+    - El de josé de cistué
+    - El de Cistué
+
+- intent: parma
+  examples: |
+    - Retrato de Maria Luisa de Parma
+    - María Luisa
+    - Luisa
+    - Parma
+    - María de Parma
+    - María Luisa de Parma
+    - Retrato de María Luisa de Parma de Goya
+    - Información sobre el retrato que Goya pintó a María Luisa de Parma
+    - ¿Retrató Goya a María Luisa de Parma?
+    - El de maría luisa de parma
+    - Quiero saber más sobre el retrato de maria luisa de parma
+    - Información sobre luisa de parma retrato de Goya
+
+
+- intent: azara
+  examples: |
+    - Retrato de Félix de Azara
+    - Félix
+    - Azara
+    - Félix de Azara
+    - Retrato de Félix
+    - Quiero saber más sobre el retrato de Félix de Azara de Goya
+    - Información sobre el cuadro de Félix de Azara
+    - Háblame de la pintura de Félix de Azara
+    - Quién fue Félix de Azara
+
+- intent: mamelucos
+  examples: |
+    - El dos de mayo o La carga de los mamelucos
+    - Dos de mayo
+    - El dos de mayo Goya
+    - Carga de los mamelucos
+    - La carga de los mamelucos de Goya
+    - Mameluco
+    - Mamelucos
+    - Los mamelucos
+    - El de los mamelucos
+    - Jinetes
+    - Batalla de los Mamelucos
+    - Háblame sobre la carga de los mamelucos
+    - Información sobre el dos de mayo
+    - Quiero saber más sobre la carga de los mamelucos
+    - Qué pasó el dos de mayo?
+    - Quiénes eran los mamelucos?
+    - Qué significa mameluco
+
+- intent: baile
+  examples: |
+    - Baile de máscaras o Danzantes enmascarados bajo un arco
+    - El baile
+    - Máscaras
+    - Danzantes
+    - El arco
+    . Danzantes bajo el arco
+    - Bailarines
+    - Los que bailan
+    - Baile de máscaras
+    - Baile de máscaras bajo el arco
+    - Danzantes enmascarados bajo un arco
+    - Baile de máscaras de Goya
+    - Quiénes eran los danzantes enmascarados de Goya
+    - Información sobre el baile de máscaras
+    - Quiero saber más sobre el cuadro del Baile de máscaras
+    - Háblame más sobre la pintura de los danzantes enmascarados bajo un arco
+
+- intent: abierto
+  examples: |
+    - ¿Está abierto?
+    - ¿Puedo ir ahora mismo?
+    - ¿Está cerrado?
+    - Abierto
+    - Cerrado
+    - Fuera de hora
+    - ¿Me da tiempo a ir?
+    - Tengo tiempo de ir ahora?
+
+- intent: informacion_cuadro
+  examples: |
+    - Información sobre [La Maja Vestida](cuadro_goya)
+    - Háblame de [Los Fusilamientos del Tres de Mayo](cuadro_goya)
+    - Cuéntame lo que sepas de [Saturno devorando a sus hijos](cuadro_goya)
+    - Qué sabes de [El Quitasol](cuadro_goya)
+    - [El Coloso](cuadro_goya)
+
+- regex: numero
+  examples: |
+    - (\d+)
+
+- intent: calcular
+  examples: |
+    - Cuánto cuestan [2](numero) entradas?
+    - Suma el precio de [3](numero) entradas
+    - Precio para [4](numero) adultos
+    - Calcular el precio de [1](numero) entrada
+    - Calcula [6](numero) entradas
+    - [7](numero) entradas
+    - Calcular [8](numero)
+    - Precio total de [9](numero) entradas
+    - Seremos [10](numero) adultos
+    - [11](numero) adultos
+    - Cuánto nos cuesta a [12](numero) adultos la entrada
+    - Entradas para [13](numero) adultos
+
+- intent: log
+  examples: |
+    - Log
+    - logs
+    - print
+    - historial de conversaciones
+    - ejecuta acción
+    - Guarda los logs
+    - Descarga los logs
+    - Fijar chat
+    - mantener logs
+    - activar logs
+    - acción log
+    - action log
+    - printea
+    - base de datos
+    - data base
