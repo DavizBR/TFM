@@ -1,0 +1,418 @@
+version: "3.1"
+
+stories:
+
+- story: saludar
+  steps:
+    - intent: saludo
+    - action: utter_saludo
+
+- story: despedida
+  steps:
+    - intent: adios
+    - action: utter_adios
+
+- story: agradecer
+  steps:
+    - intent: gracias
+    - action: utter_gracias
+
+- story: preguntar si es un bot
+  steps:
+    - intent: bot_challenge
+    - action: utter_bot_challenge
+
+- story: preguntar por el museo
+  steps:
+    - intent: about_museo
+    - action: utter_about_museo
+
+- story: preguntar por el horario museo
+  steps:
+    - intent: horario
+    - action: utter_horario
+
+- story: preguntar por la duración de la visita
+  steps:
+    - intent: duracion
+    - action: utter_duracion
+
+- story: preguntar por la duración de la visita v2
+  steps:
+    - intent: duracion
+    - action: utter_duracion
+
+- story: preguntar por los precios
+  steps:
+    - intent: precios
+    - action: utter_precios
+
+- story: preguntar por la entrada gratuita
+  steps:
+    - intent: gratuita
+    - action: utter_gratuita
+
+- story: preguntar por las entradas
+  steps:
+    - intent: entradas
+    - action: utter_entradas
+
+- story: preguntar por el contacto del museo
+  steps:
+    - intent: contacto
+    - action: utter_contacto
+
+- story: preguntar por la direccion del museo
+  steps:
+    - intent: direccion
+    - action: utter_direccion
+
+- story: preguntar por las visitas guiadas
+  steps:
+    - intent: guiadas
+    - action: utter_guiadas
+
+- story: preguntar por el publico del museo
+  steps:
+    - intent: publico
+    - action: utter_publico
+
+- story: preguntar por la afluencia
+  steps:
+    - intent: afluencia
+    - action: utter_afluencia
+
+- story: preguntar por las fotos
+  steps:
+    - intent: fotos
+    - action: utter_fotos
+
+- story: preguntar por las normas
+  steps:
+    - intent: normas
+    - action: utter_normas
+
+- story: preguntar por la tienda
+  steps:
+    - intent: tienda
+    - action: utter_tienda
+
+- story: preguntar por la cafeteria
+  steps:
+    - intent: cafeteria
+    - action: utter_cafeteria
+
+- story: preguntar por el edificio
+  steps:
+    - intent: edificio
+    - action: utter_edificio
+
+- story: preguntar por la financiacion
+  steps:
+    - intent: financiacion
+    - action: utter_financiacion
+
+- story: preguntar por la apertura del museo
+  steps:
+    - intent: apertura
+    - action: utter_apertura
+
+- story: preguntar por las colecciones del museo
+  steps:
+    - intent: colecciones
+    - action: utter_colecciones
+
+- story: preguntar por las colecciones del museo y la pintura
+  steps:
+    - intent: pinturas
+    - action: utter_pinturas
+
+- story: preguntar por las colecciones del museo y grabados
+  steps:
+    - intent: grabados
+    - action: utter_grabados
+
+- story: preguntar por las actividades
+  steps:
+    - intent: actividades
+    - action: utter_actividades
+
+- story: preguntar por la visita virtual
+  steps:
+    - intent: virtual
+    - action: utter_virtual
+
+- story: preguntar por el plano del museo
+  steps:
+    - intent: plano
+    - action: utter_plano
+
+- story: preguntar por el boletin
+  steps:
+    - intent: boletin
+    - action: utter_boletin
+
+- story: preguntar por la vida de goya
+  steps:
+    - intent: vida
+    - action: utter_vida
+
+- story: preguntar por la juventud de goya
+  steps:
+    - intent: juventud
+    - action: utter_juventud
+
+- story: preguntar por la estancia en italia de goya
+  steps:
+    - intent: italia
+    - action: utter_italia
+
+- story: preguntar por la estancia en madrid de goya
+  steps:
+    - intent: madrid
+    - action: utter_madrid
+
+- story: preguntar por la enfermedad de goya
+  steps:
+    - intent: enfermedad
+    - action: utter_enfermedad
+
+- story: preguntar por la guerra
+  steps:
+    - intent: guerra
+    - action: utter_guerra
+
+- story: preguntar por el nacimiento de goya
+  steps:
+    - intent: nacimiento
+    - action: utter_nacimiento
+
+- story: preguntar por la muerte de goya
+  steps:
+    - intent: muerte
+    - action: utter_muerte
+
+- story: preguntar por la quinta del sordo
+  steps:
+    - intent: quinta
+    - action: utter_quinta
+
+- story: preguntar por la familia de goya
+  steps:
+    - intent: familia
+    - action: utter_familia
+
+- story: preguntar por el legado de goya
+  steps:
+    - intent: legado
+    - action: utter_legado
+
+- story: Preguntar por la obra de Goya
+  steps:
+    - intent: obra
+    - action: utter_obra
+
+- story: Preguntar por la tecnica
+  steps:
+    - intent: tecnica
+    - action: utter_tecnica
+
+- story: Preguntar por la serie de los grabados
+  steps:
+    - intent: grabados
+    - action: utter_grabados
+
+- story: Preguntar por los grabados de Velazquez
+  steps:
+    - intent: velazquez
+    - action: utter_velazquez
+
+- story: Grabado de Esopo
+  steps:
+    - intent: esopo
+    - action: utter_esopo
+
+- story: Grabado del condeduque de Olivares
+  steps:
+    - intent: olivares
+    - action: utter_olivares
+
+- story: Grabado del príncipe Carlos
+  steps:
+    - intent: carlos
+    - action: utter_carlos
+
+- story: Preguntar por los Caprichos de Goya
+  steps:
+    - intent: caprichos
+    - action: utter_caprichos
+
+- story: Preguntar por el capricho del abuelo
+  steps:
+    - intent: abuelo
+    - action: utter_abuelo
+
+- story: Preguntar por el capricho tu que no sabes
+  steps:
+    - intent: tu
+    - action: utter_tu
+
+- story: Preguntar por el sueño de la razon
+  steps:
+    - intent: razon
+    - action: utter_razon
+
+- story: capricho de brabisimo
+  steps:
+    - intent: brabisimo
+    - action: utter_brabisimo
+
+- story: Desastres de Goya
+  steps:
+    - intent: desastres
+    - action: utter_desastres
+
+- story: Desastre de pensamientos
+  steps:
+    - intent: pensamientos
+    - action: utter_pensamientos
+
+- story: Desastre ni por esas
+  steps:
+    - intent: niporesas
+    - action: utter_niporesas
+
+- story: desastre de la verdad
+  steps:
+    - intent: verdad
+    - action: utter_verdad
+
+- story: Grabados de tauromaquia
+  steps:
+    - intent: tauromaquia
+    - action: utter_tauromaquia
+
+- story: Tauromaquia Juanito
+  steps:
+    - intent: juanito
+    - action: utter_juanito
+
+- story: Tauromaquia desgracias
+  steps:
+    - intent: desgracias
+    - action: utter_desgracias
+
+- story: Tauromaquia Pepe
+  steps:
+    - intent: pepe
+    - action: utter_pepe
+
+- story: Serie de los disparates
+  steps:
+    - intent: disparates
+    - action: utter_disparates
+
+- story: Disparate femenino
+  steps:
+    - intent: femenino
+    - action: utter_femenino
+
+- story: Disparate de miedo
+  steps:
+    - intent: miedo
+    - action: utter_miedo
+
+- story: Disparate volante
+  steps:
+    - intent: volante
+    - action: utter_volante
+
+- story: Toros de Burdeos
+  steps:
+    - intent: burdeos
+    - action: utter_burdeos
+
+- story: Burdeos diversion
+  steps:
+    - intent: diversion
+    - action: utter_diversion
+
+- story: Toro americano
+  steps:
+    - intent: americano
+    - action: utter_americano
+
+- story: Burdeos partida
+  steps:
+    - intent: partida
+    - action: utter_partida
+
+- story: Pinturas de Goya
+  steps:
+    - intent: pinturas
+    - action: utter_pinturas
+
+- story: Pintura de Gloria
+  steps:
+    - intent: gloria
+    - action: utter_gloria
+
+- story: Pintura joaquin
+  steps:
+    - intent: joaquin
+    - action: utter_joaquin
+
+- story: Autorretrato de Goya
+  steps:
+    - intent: autorretrato
+    - action: utter_autorretrato
+
+- story: Pintura menipo
+  steps:
+    - intent: menipo
+    - action: utter_menipo
+
+- story: Pintura cistue
+  steps:
+    - intent: cistue
+    - action: utter_cistue
+
+- story: Pintura Parma
+  steps:
+    - intent: parma
+    - action: utter_parma
+
+- story: Pintura Azara
+  steps:
+    - intent: azara
+    - action: utter_azara
+
+- story: La carga de los mamelucos
+  steps:
+    - intent: mamelucos
+    - action: utter_mamelucos
+
+- story: baile de mascaras
+  steps:
+    - intent: baile
+    - action: utter_baile
+
+- story: abierto o cerrado
+  steps:
+    - intent: abierto
+    - action: action_abierto
+
+- story: reconocer obras
+  steps:
+    - intent: informacion_cuadro
+    - action: action_informacion_cuadro
+
+- story: calcular precio de entradas
+  steps:
+  - intent: calcular
+  - action: action_calcular_precio
+
+- story: historial de la conversacion
+  steps:
+  - intent: log
+  - action: action_logs
