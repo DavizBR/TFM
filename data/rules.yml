@@ -1,0 +1,8 @@
+version: "3.1"
+
+rules:
+
+- rule: dar las gracias
+  steps:
+  - intent: gracias
+  - action: utter_gracias
