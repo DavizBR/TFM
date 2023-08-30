@@ -294,6 +294,11 @@ nlu:
     - Tema del museo
     - Temática
     - Qué ver
+    - Información sobre el museo
+    - Me gustaría saber más información sobre el museo
+    - ¿Podrías darme más información sobre el museo?
+    - Qué me puedes informar acerca del museo
+    - Qué información del museo me puedes dar?
 
 - intent: horario
   examples: |
@@ -1222,6 +1227,8 @@ nlu:
     - ¿Cuáles son las obras destacadas del museo?
     - Obras
     - Qué obras ver
+    - Qué cosas puedo ver?
+    - Cosas por ver en el museo
     - Dime las obras del museo
     - Obras disponibles
     - ¿Qué obras puedo ver?
@@ -1427,6 +1434,11 @@ nlu:
     - Biografía de Goya
     - Resumen de la vida de Goya
     - Su vida
+    - goya
+    - cosas de goya
+    - Sobre Goya
+    - Qué sabes de Goya?
+    - ¿Qué me puedes decir de Goya?
     - ¿Puedes proporcionarme información acerca de la vida de Goya?
     - Quiero saber más sobre la historia personal de Goya
     - Resumen biográfico
@@ -2365,21 +2377,3 @@ nlu:
     - [11](numero) adultos
     - Cuánto nos cuesta a [12](numero) adultos la entrada
     - Entradas para [13](numero) adultos
-
-- intent: log
-  examples: |
-    - Log
-    - logs
-    - print
-    - historial de conversaciones
-    - ejecuta acción
-    - Guarda los logs
-    - Descarga los logs
-    - Fijar chat
-    - mantener logs
-    - activar logs
-    - acción log
-    - action log
-    - printea
-    - base de datos
-    - data base
