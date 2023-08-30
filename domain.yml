@@ -80,13 +80,11 @@ intents:
   - abierto
   - informacion_cuadro
   - calcular
-  - log
 
 actions:
   - action_abierto
   - action_informacion_cuadro
   - action_calcular_precio
-  - action_logs
 
 entities:
   - cuadro_goya
@@ -95,8 +93,15 @@ entities:
 responses:
 
   utter_saludo:
-  - text: "¡Hola, soy FR∀N! El chatbot del museo\n¿En qué puedo ayudarle?"
-  - text: "Le doy la bienvenida al chat del museo, soy FR∀N.\n¿En qué puedo ayudarle?"
+  - text: "Soy G0YA, el chatbot del museo\n¿En qué puedo ayudarle?"
+    buttons:   
+      - title: Información
+        payload: /about_museo
+      - title: Goya
+        payload: /vida
+      - title: Obras
+        payload: /obra
+  - text: "Le doy la bienvenida al chat del museo, soy G0YA.\n¿En qué puedo ayudarle?"
     buttons:   
       - title: Información
         payload: /about_museo
@@ -117,11 +122,12 @@ responses:
         payload: /saludo
 
   utter_adios:
-  - text: "Agradezco el tiempo que me ha dedicado. Que tenga un buen día. "
+  - text: "Agradezco el tiempo que me ha dedicado. Que tenga un buen día."
+  - text: "Espero haberle sido de ayuda, le agradezco el tiempo que me ha dedicado. Que tenga un buen día."
 
   utter_bot_challenge:
-  - text: "Estás hablando con el chatbot del museo, Francho."
-  - text: "Soy Francho, el chatbot del museo."
+  - text: "Estás hablando con el chatbot del museo, G0YA."
+  - text: "Soy G0YA, el chatbot del museo."
 
   utter_about_museo:
   - text: "El museo cuenta con una rica colección de pinturas y grabados de Francisco de Goya que abarcan diferentes etapas de su carrera artística, ofreciendo una visión completa del estilo y técnica del pintor zaragozano.\n\nTambién podrá encontrar exposiciones temporales y actividades culturales."
@@ -141,9 +147,6 @@ responses:
 
   utter_horario:
   - text: "El horario del museo es el siguiente:\n\n🕙 10:00 - 18:00 (M-V).\n\n🕙 10:00 - 14:00 (domingos y festivos).\n\n🔒 El museo cierra todos los lunes del año, así como los días 25 de diciembre y 1 y 6 de enero.\n\n❗El horario de taquilla finaliza 20 minutos antes de que cierre el museo."
-    buttons:
-      - title: Disponibilidad
-        payload: /abierto
 
 
   utter_duracion:
@@ -161,7 +164,7 @@ responses:
   - text: "La entrada es gratuita para:\n● menores de 12 años\n● personas con +33% de discapacidad y su acompañante (si es imprescindible).\n\nSerá gratuita para el público general:\n● El primer miércoles de cada mes\n● El 29 de enero (San Valero)\n● El 5 de marzo (Cincomarzada)\n● El 23 de abril (San Jorge)\n● El 18 de mayo (Día de los Museos)."
 
   utter_entradas:
-  - text: "Puede comprar las entradas presencialmente en taquilla u [online](https://www.fundacionibercaja.es/usuarios/compra-entradas/Entrada-Museo-Goya).\n\nLe recuerdo que la taquilla cierra 20 minutos antes que el museo. Si va a comprar una entrada reducida, acuérdese de llevar la acreditación pertinente."
+  - text: "Puede comprar las entradas presencialmente en taquilla u online.\n\nLe recuerdo que la taquilla cierra 20 minutos antes que el museo. Si va a comprar una entrada reducida, acuérdese de llevar la acreditación pertinente."
 
   utter_contacto:
   - text: "📞Teléfono (+34) 535 353 456\n\n📧Correo: museofranciscodegoya@aragoncultura.es\n\n📠Fax: (+34) 976 303 164"
@@ -194,7 +197,7 @@ responses:
   - text: "El museo no dispone de cafetería. Además, se prohíbe el acceso con comida o bebida."
 
   utter_edificio:
-  - text: "El museo se aloja en la [casa palacio de los Pardo](https://www.zaragoza.es/contenidos/servicios-sociales/personas-mayores/reactivate/Pardo.pdf), construida en 1535 en pleno Renacimiento aragonés."
+  - text: "El museo se aloja en la casa palacio de los Pardo, construida en 1535 en pleno Renacimiento aragonés."
 
   utter_financiacion:
   - text: "El museo no está financiado con dinero público."
@@ -203,16 +206,16 @@ responses:
   - text: "El museo abrió sus puertas el 25 de febrero de 2015."
 
   utter_colecciones:
-  - text: "El museo alberga una rica variedad de piezas artísticas a su disposición:\n\nLa [colección de Goya](https://museogoya.fundacionibercaja.es/goya-en-zaragoza.php)\n\nLas [15 obras esenciales] (https://museogoya.fundacionibercaja.es/15-esenciales.php)\n\nLas [48 obras destacadas] (https://museogoya.fundacionibercaja.es/48-destacados.php)\n\nTambién puede encontrar información sobre la [exposición temporal] (https://museogoya.fundacionibercaja.es/exposicion-actual.php)"
+  - text: "El museo alberga una rica variedad de piezas artísticas a su disposición:\n\nLa colección de Goya\n\nLas 15 obras esenciales.\n\nLas 48 obras destacadas.\n\nTambién puede encontrar información sobre la exposición temporal."
 
   utter_actividades:
-  - text: "El museo ofrece diversas [actividades](https://museogoya.fundacionibercaja.es/actividades-educativas.php) culturales dirigidas tanto a niños como a adultos."
+  - text: "El museo ofrece diversas actividades culturales dirigidas tanto a niños como a adultos."
 
   utter_virtual:
-  - text: "El museo pone a su disposición una <a href='https://museogoya.fundacionibercaja.es/visita-virtual.php'>visita virtual</a> gratuita."
+  - text: "El museo pone a su disposición una visita virtual gratuita disponible en la web."
 
   utter_plano:
-  - text: "El museo cuenta con un total de 5 plantas.\n\nPonemos a  su disposición un [plano](https://museogoya.fundacionibercaja.es/itinerario-recomendado.php) del museo para que conozca el recorrido recomendado para su visita."
+  - text: "El museo cuenta con un total de 5 plantas.\n\nPonemos a  su disposición un plano del museo para que conozca el recorrido recomendado para su visita."
 
   utter_boletin:
   - text: "El museo dispone de un boletín dedicado al estudio e investigación de la Historia del Arte."
