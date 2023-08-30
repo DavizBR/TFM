@@ -411,8 +411,3 @@ stories:
   steps:
   - intent: calcular
   - action: action_calcular_precio
-
-- story: historial de la conversacion
-  steps:
-  - intent: log
-  - action: action_logs
