@@ -1,0 +1,132 @@
+/* Estilo para la cabecera principal */
+.header {
+    background: linear-gradient(to right, #2d545e, #e4691c);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Estilo para los enlaces de la cabecera */
+.header ul {
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+}
+
+.pestanias {
+    align-items: center;
+    justify-content: center;
+}
+
+.header ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.header ul li a:hover {
+    color: #e4691c;
+}
+
+/* Estilo para el titular principal */
+.main-title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Estilo para el contenedor del carrusel */
+
+
+/* Estilo para el titular secundario */
+.secondary-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo para la presentación del chatbot */
+.chatbot-presentation {
+    text-align: justify;
+    margin: 20px;
+    font-size: 22px;
+}
+
+/* Estilo para el botón de chat */
+.chat-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.chat-button a {
+    display: inline-block;
+    background-color: #e4691c;
+    color: white;
+    padding: 30px 60px;
+    text-decoration: none;
+    border-radius: 85px;
+    transition: background-color 0.3s;
+    font-size: 30px;
+}
+
+.chat-button a:hover {
+    background-color: #ffbb6e;
+}
+
+/* Estilo para la mini cabecera al final de la página */
+.footer {
+    background: linear-gradient(to right, #2d545e, #e4691c);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 5px 0;
+    display: flex; /* Habilita el uso de Flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    height: 30px;
+}
+
+
+
+body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/El_dos_de_mayo_de_1808_en_Madrid.jpg/640px-El_dos_de_mayo_de_1808_en_Madrid.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcional: hace que la imagen de fondo sea fija */
+    background-position: center center;
+    color: white;
+}
+
+.chatbot-presentation {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-title {
+    background-color: rgb(255, 255, 255, 0.5);
+    color: black;
+    padding: 20px;
+}
+
+.centered-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh; /* Ajusta la altura según tus preferencias */
+}
+
+.centered-header h1 {
+    font-size: 36px; /* Tamaño del texto */
+}
