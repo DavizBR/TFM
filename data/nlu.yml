@@ -10,7 +10,6 @@ nlu:
     - buenos días
     - buenas tardes
     - qué pasa
-    - holi
     - hello
     - saludos
     - te saludo
@@ -23,58 +22,41 @@ nlu:
     - Hola, ¿cómo va todo?
     - Hola, ¿cómo estás hoy?
     - Hola, ¿cómo te va?
-    - ¡Hola! Un placer saludarte.
-    - Hola, un saludo desde aquí.
-    - Buen día, espero que estés bien.
     - Buenas tardes, ¿cómo te encuentras?
-    - Hola, ¿cómo ha sido tu día?
-    - Hola, ¿qué tal estás?
     - Hola, ¿puedes ayudarme?
     - Hola necesito ayuda
+    - GoIA
+    - muy buenas
+    - qué tal GoIA
+    - Hola GoIA
+    - Encantado
+
+- intent: consulta
+  examples: |
+    - Deseo realizar una consulta
+    - Me gustaría hacer una consulta
     - Ayudame
     - Quiero hacer una consulta
     - Una consulta
-    - consulta
-    - pregunta
-    - Una pregunta
-    - tengo una pregunta
-    - una cosa
-    - ola
     - quiero saber algo
     - quiero información
     - info
     - dame información
     - dime algo
-    - muy buenas
-    - qué tal Goya
-    - Hola Goya
-    - Hola Franciso
-    - Hola Francho
-    - qué tal Francisco
-    - qué tal Francho
-    - qué tal Fran
-    - Deseo realizar una consulta
-    - Me gustaría hacer una consulta
-    - Estoy interesado/a en hacer una consulta
+    - consulta
+    - pregunta
+    - Una pregunta
+    - tengo una pregunta
+    - una cosa
     - Quisiera hacer una consulta
     - Necesito hacer una consulta
     - Estoy buscando hacer una consulta
     - Tengo una pregunta que hacer
     - Estoy en busca de información
     - Me interesa obtener respuesta a una pregunta
-    - Pretendo plantear una cuestión
-    - Estoy solicitando asesoramiento
     - Estoy indagando sobre algo
-    - Me encuentro con dudas y necesito aclararlas
     - Quiero obtener información adicional
-    - Estoy buscando orientación
     - Me interesa obtener más detalles sobre un tema
-    - Estoy pensando en consultar sobre algo en específico
-    - Estoy investigando y necesito respuestas
-    - Quiero solicitar una explicación
-    - Estoy interesado/a en recibir asistencia
-    - Encantado
-
 
 - intent: adios
   examples: |
@@ -96,10 +78,6 @@ nlu:
     - Que todo te vaya genial
     - Hasta la próxima vez que hablemos
     - Cuídate mucho
-    - Espero volver a verte pronto
-    - que tengas una maravillosa tarde
-    - Que tengas un buen descanso
-    - que disfrutes el día
     - Adiós y gracias
     - Que tengas un buen fin de semana
     - que tengas un feliz día
@@ -186,52 +164,6 @@ nlu:
     - Estoy hablando con un humano?
     - Estoy hablando con un robot?
 
-
-- intent: give_time
-  examples: |
-    - ¿Qué hora es?
-    - que hora eS
-    - qué hora es?
-    - dame la hora
-    - dime la hora
-    - en qué hora vivo
-    - qué hora es
-    - reloj
-    - modo reloj
-    - tienes hora?
-    - tienes hora
-    - hora
-    - la hora
-    - Dime la hora actual
-    - ¿Puedes decirme la hora?
-    - Necesito saber qué hora es
-    - ¿Me puedes decir la hora exacta?
-    - ¿Cuál es la hora del día?
-    - Quiero saber qué hora marca el reloj
-    - ¿Podrías darme la hora, por favor?
-    - Estoy buscando la hora
-    - ¿Sabes qué hora es?
-    - ¿Puedes decirme la hora en este momento?
-    - ¿Cuál es la hora en este instante?
-    - ¿Podrías indicarme la hora precisa?
-    - Estoy interesado en saber la hora exacta
-    - Quisiera saber la hora en este momento
-    - ¿Podrías proporcionarme la hora correcta?
-    - ¿Qué hora marca el reloj?
-    - ¿Cuál es la hora actual?
-    - ¿Puedes darme la hora que es en este instante?
-    - Me gustaría saber la hora
-    - ¿Sabes qué hora es ahora mismo exactamente?
-    - ¿Cuál es la hora exacta en este instante?
-    - ¿Puedes darme la hora exacta?
-    - Necesito conocer la hora
-    - ¿Sabes qué hora marca el reloj?
-    - ¿Puedes decirme la hora exacta?
-    - Dime la hora exacta
-    - ¿Podrías informarme sobre la hora?
-    - Estoy interesado en saber la hora
-    - Quisiera conocer la hora actual
-
 - intent: about_museo
   examples: |
     - ¿Qué es este lugar?
@@ -239,6 +171,8 @@ nlu:
     - Museo
     - Museo de Goya
     - Museo Goya
+    - Qué sabes del museo
+    - que sabes del museo
     - ¿Dónde estoy?
     - ¿A qué tipo de museo estoy entrando?
     - ¿Esto es un museo?
@@ -287,13 +221,22 @@ nlu:
     - ¿Puedes darme información sobre este museo?
     - ¿Cuál es la misión de este museo?
     - ¿Qué es este museo?
-    - Qué sentido tiene este museo
-    - Sentido del museo
-    - Porqué del museo
-    - Razón del museo
     - Tema del museo
     - Temática
+    - En qué me puedes ayudar
     - Qué ver
+    - Qué me puedes decir
+    - ¿Qué me puedes decir del museo?
+    - No sé qué preguntare
+    - Qué te puedo preguntar
+    - En qué me puedes ayudar
+    - En qué cosas me podrías ayudar
+    - No sé cómo me puedes ayudar
+    - No sé qué preguntarte
+    - Háblame del museo
+    - Qué cosas puedo ver en el museo
+    - Qué temas abordas?
+    - Qué cuestiones puedes responder?
     - Información sobre el museo
     - Me gustaría saber más información sobre el museo
     - ¿Podrías darme más información sobre el museo?
@@ -330,16 +273,11 @@ nlu:
     - ¿Cuál es el horario de apertura los días festivos?
     - ¿A qué hora abre la exposición principal del museo?
     - Dime los horarios de visita durante la semana.
-    - ¿Cuánto tiempo puedo visitar el museo en un día?
     - ¿El museo tiene horarios extendidos en algún día?
     - ¿A qué hora comienzan las visitas guiadas?
-    - ¿El museo cierra durante el almuerzo?
+    - ¿El museo cierra durante el mediodía?
     - ¿Cuál es el último horario de entrada al museo?
     - ¿El museo abre todos los días de la semana?
-    - ¿Cuál es el horario de apertura los días de lluvia?
-    - ¿Hay horarios especiales para grupos o visitas escolares?
-    - ¿A qué hora se realizan las actividades educativas en el museo?
-    - ¿El horario del museo varía en temporada alta?
     - ¿A qué hora abren y cierran las exposiciones temporales?
     - ¿El horario del museo cambia los días festivos?
     - ¿El museo tiene horarios reducidos en invierno?
@@ -347,20 +285,6 @@ nlu:
     - ¿El museo ofrece visitas nocturnas?
     - ¿A qué hora se realizan los eventos culturales en el museo?
     - ¿El horario del museo es el mismo los fines de semana?
-    - ¿El museo tiene horarios especiales para fotografía o filmaciones?
-    - ¿Cuándo es el mejor momento para evitar las multitudes en el museo?
-    - ¿El horario del museo es diferente en verano?
-    - ¿A qué hora abre y cierra la tienda del museo?
-    - ¿El museo tiene horarios específicos para visitantes con discapacidades?
-    - ¿Cuál es el horario de apertura los días laborales?
-    - ¿El museo tiene horarios especiales para eventos privados?
-    - ¿A qué hora se realizan las presentaciones de artistas en el museo?
-    - ¿El horario del museo cambia durante las vacaciones escolares?
-    - ¿El museo tiene horarios reducidos los días de mantenimiento?
-    - ¿Cuál es el horario de apertura los días de verano?
-    - ¿El museo cierra en alguna época del año para renovaciones?
-    - ¿A qué hora abre y cierra el restaurante del museo?
-    - ¿El horario del museo es el mismo todos los meses del año?
 
 - intent: duracion
   examples: |
@@ -369,9 +293,9 @@ nlu:
     - Duración
     - Duración de la visita
     - Visita
-    - Duración recorrido
+    - Duración del recorrido
     - Tiempo visita
-    - Tiempo recorrido
+    - Tiempo del recorrido
     - Recorrido
     - Quiero saber cuanto dura la visita
     - ¿Cuánto se tarda en ver el museo?
@@ -399,16 +323,8 @@ nlu:
     - ¿Cuánto tiempo debería reservar para visitar la tienda del museo?
     - ¿Cuál es el tiempo máximo permitido para estar dentro del museo?
     - ¿Cuánto tiempo se sugiere para visitar el museo sin prisas?
-    - ¿Cuántas horas se necesitan para disfrutar de las actividades del museo?
-    - ¿Cuál es la duración recomendada para una visita en familia al museo?
-    - ¿Cuántas horas suelen dedicar los niños durante su visita al museo?
-    - ¿Cuánto tiempo se sugiere para apreciar las obras de arte del museo?
     - ¿Cuál es la duración aproximada de una visita guiada al museo?
     - ¿Cuánto tiempo lleban las actividades educativas?
-    - ¿Cuánto tiempo se recomienda para ver las exposiciones interactivas del museo?
-    - ¿Cuánto tiempo necesito para recorrer las exhibiciones especiales del museo?
-    - ¿Cuánto tiempo se sugiere para explorar la tienda de regalos del museo?
-    - ¿Cuánto tiempo debería planificar para participar en talleres o eventos del museo?
     - ¿Cuál es la duración típica de una visita al museo?
     - ¿Cuánto tiempo se recomienda para disfrutar de las instalaciones del museo?
 
@@ -480,7 +396,6 @@ nlu:
     - Descuento desempleados
     - Descuentos parados
     - Quiero conocer los precios
-    - ¿Existen tarifas especiales para miembros de asociaciones culturales?
     - ¿Hay descuentos para estudiantes de arte?
     - Precio festivos
     - Precio fines de semana
@@ -495,15 +410,6 @@ nlu:
     - ¿Hay descuentos para personas en situación de desempleo?
     - ¿Cuánto cuesta la entrada para eventos especiales del museo?
     - ¿Existen tarifas especiales para grupos de estudiantes?
-    - ¿Hay algún descuento en la entrada para suscriptores de revistas culturales?
-    - ¿Cuál es el precio de la entrada para miembros de otras instituciones culturales?
-    - ¿Existen tarifas especiales para personas con membresía de tarjeta de crédito?
-    - ¿Hay descuentos para grupos de investigadores o académicos?
-    - ¿Cuánto cuesta la entrada para visitantes en horario matutino?
-    - ¿Existen tarifas especiales para visitantes de otros museos del mismo tipo?
-    - ¿Hay algún descuento en la entrada para grupos de excursiones escolares?
-    - ¿Cuál es el precio de la entrada para visitantes en horario vespertino?
-    - ¿Existen tarifas especiales para empresas o instituciones patrocinadoras?
     - ¿Cuánto cuesta la entrada en de fin de semana?
 
 - intent: gratuita
@@ -528,29 +434,15 @@ nlu:
     - ¿Hay días específicos en los que la entrada al museo es gratuita?
     - ¿Cuál es la política de entrada gratuita del museo?
     - ¿Existen condiciones especiales para obtener entrada gratuita al museo?
-    - ¿Hay alguna categoría de visitantes que pueda acceder gratuitamente al museo?
     - ¿El museo ofrece entrada gratuita para residentes locales?
     - ¿Existen programas o eventos en los que se pueda ingresar al museo gratis?
-    - ¿Hay descuentos o promociones especiales que permitan obtener entrada gratuita al museo?
     - ¿Cuáles son los requisitos para obtener entrada gratuita al museo?
     - ¿El museo ofrece entrada gratuita para estudiantes?
     - ¿Existen fechas o temporadas en las que la entrada al museo es gratuita?
     - ¿Hay alguna excepción en la que no se cobre entrada al museo?
     - ¿El museo ofrece entrada gratuita para grupos escolares?
     - ¿Hay alguna categoría de edad que pueda acceder al museo gratis?
-    - ¿El museo ofrece entrada gratuita para miembros de otras instituciones culturales?
-    - ¿Existen días o eventos especiales en los que la entrada al museo es gratuita para todos?
-    - ¿Hay alguna iniciativa o patrocinio que permita obtener entrada gratuita al museo?
     - ¿El museo ofrece entrada gratuita para personas con discapacidad?
-    - ¿Existen condiciones específicas para obtener entrada gratuita al museo en días festivos?
-    - ¿Hay algún programa de acceso gratuito al museo para personas en situación de desempleo?
-    - ¿Existen requisitos especiales para obtener entrada gratuita al museo para personas mayores?
-    - ¿Hay alguna promoción que permita obtener entrada gratuita al museo en días de lluvia?
-    - ¿El museo ofrece entrada gratuita para grupos de turistas o excursiones?
-    - ¿Hay alguna colaboración o convenio con otras instituciones que ofrezca entrada gratuita al museo?
-    - ¿El museo ofrece entrada gratuita para visitantes en horario matutino o vespertino?
-    - ¿Existen programas educativos o culturales que permitan obtener entrada gratuita al museo?
-    - ¿Hay alguna promoción que permita obtener entrada gratuita al museo en días de semana?
 
 - intent: entradas
   examples: |
@@ -638,7 +530,6 @@ nlu:
     - ¿Dónde consigo entradas?
     - ¿Donde compro entradas para el museo?
     - Página de entradas
-    - Web de entradas
     - Página web de entradas
     - Entradas online
     - Quiero comprar entradas online
@@ -650,37 +541,8 @@ nlu:
     - ¿En qué lugar puedo conseguir las entradas del museo?
     - ¿Dónde debo dirigirme para comprar las entradas del museo?
     - ¿Cuál es el punto de venta de las entradas del museo?
-    - ¿Dónde puedo obtener los boletos de entrada al museo?
-    - Quisiera saber dónde puedo adquirir las entradas del museo.
-    - ¿En qué sitio puedo conseguir los boletos para el museo?
-    - ¿Dónde encuentro los lugares de venta de entradas para el museo?
-    - ¿Dónde debo ir para obtener los boletos de entrada al museo?
     - ¿En qué lugar puedo realizar la compra de las entradas del museo?
     - ¿Dónde se pueden conseguir las entradas para el museo?
-    - Quiero comprar las entradas del museo, ¿dónde debo ir?
-    - ¿Dónde puedo conseguir las entradas de manera presencial para el museo?
-    - ¿En qué lugar se pueden adquirir las entradas del museo?
-    - ¿Dónde puedo obtener los tickets de entrada al museo?
-    - ¿Dónde debo dirigirme para conseguir los boletos del museo?
-    - ¿Dónde se encuentran los puntos de venta de las entradas del museo?
-    - ¿Dónde se compran los boletos de ingreso al museo?
-    - ¿Dónde puedo comprar los boletos de entrada al museo en línea?
-    - ¿Cuál es la página web para adquirir las entradas del museo?
-    - ¿Dónde puedo encontrar la plataforma en línea para comprar las entradas del museo?
-    - ¿En qué sitio web puedo realizar la compra de las entradas del museo?
-    - ¿Dónde puedo conseguir las entradas del museo a través de internet?
-    - ¿Dónde puedo realizar la reserva de las entradas del museo?
-    - ¿Dónde puedo encontrar el enlace para comprar las entradas del museo?
-    - ¿En qué página de internet puedo obtener los boletos de entrada al museo?
-    - ¿Dónde puedo adquirir las entradas del museo en línea?
-    - ¿Dónde puedo comprar las entradas del museo de manera anticipada?
-    - ¿En qué plataforma en línea puedo conseguir los boletos para el museo?
-    - ¿Dónde puedo encontrar la taquilla para comprar las entradas del museo?
-    - ¿Dónde se encuentra la oficina de venta de boletos del museo?
-    - ¿Dónde puedo obtener las entradas del museo en persona?
-    - ¿Dónde se localiza el punto de venta de boletos para el museo?
-    - ¿Dónde puedo adquirir las entradas del museo el día de la visita?
-    - ¿En qué lugar se encuentra la boletería para comprar las entradas del museo?
 
 - intent: contacto
   examples: |
@@ -692,6 +554,8 @@ nlu:
     - Teléfono museo
     - Contacto
     - Contacto del museo
+    - Fax
+    - Fax del museo
     - Contacto museo
     - Cómo llamo al museo?
     - Cómo contacto con el museo?
@@ -719,39 +583,24 @@ nlu:
     - Contactar con el museo
     - Cómo contactar con el museo
     - ¿Me puedes proporcionar el número de teléfono del museo?
-    - Quisiera saber el contacto telefónico del museo.
+    - Quisiera saber el contacto telefónico del museo
     - ¿Cuál es el correo electrónico del museo?
     - ¿Me puedes dar el correo electrónico del museo?
-    - Quisiera saber la dirección de correo electrónico del museo.
+    - Quisiera saber la dirección de correo electrónico del museo
     - ¿Dónde puedo encontrar el teléfono del museo?
     - ¿Cuál es el número de contacto del museo?
     - ¿Me podrías proporcionar el email del museo?
-    - Quisiera obtener el correo electrónico de contacto del museo.
     - ¿Dónde puedo encontrar el correo electrónico del museo?
-    - ¿Cuál es el teléfono de atención al cliente del museo?
-    - ¿Me puedes dar el número de teléfono de información del museo?
-    - Quisiera saber el teléfono de contacto del museo.
-    - ¿Cuál es la dirección de correo electrónico de atención al cliente del museo?
     - ¿Me puedes proporcionar el email de información del museo?
-    - Quisiera saber el email de contacto del museo.
+    - Quisiera saber el email de contacto del museo
     - ¿Dónde puedo encontrar el teléfono de información del museo?
     - ¿Cuál es el número de contacto para consultas del museo?
     - ¿Me puedes dar el correo electrónico de información del museo?
-    - Quisiera obtener el contacto telefónico del museo.
+    - Quisiera obtener el contacto telefónico del museo
     - ¿Dónde puedo encontrar el correo electrónico de atención al cliente del museo?
     - ¿Cuál es el teléfono principal del museo?
-    - ¿Me puedes proporcionar el email de atención al cliente del museo?
-    - Quisiera saber el número de teléfono principal del museo.
-    - ¿Cuál es la dirección de correo electrónico principal del museo?
-    - ¿Me puedes dar el email de atención al cliente del museo?
-    - Quisiera obtener la dirección de correo electrónico principal del museo.
-    - ¿Dónde puedo encontrar el número de contacto principal del museo?
-    - ¿Cuál es el teléfono de información general del museo?
-    - ¿Me puedes proporcionar el correo electrónico principal del museo?
-    - Quisiera saber el teléfono de información general del museo.
-    - ¿Cuál es la dirección de correo electrónico para consultas del museo?
     - ¿Me puedes dar el correo electrónico principal del museo?
-    - Quisiera obtener el teléfono de información general del museo.
+    - Quisiera obtener el teléfono de información general del museo
     - ¿Dónde puedo encontrar el correo electrónico para consultas del museo?
 
 - intent: direccion
@@ -815,18 +664,6 @@ nlu:
     - ¿Cuál es la dirección postal del museo?
     - ¿Dónde puedo ubicar el museo en el centro de la ciudad?
     - ¿En qué dirección física puedo encontrar el museo?
-    - ¿Cuál es la ubicación específica del museo?
-    - ¿Dónde se sitúa exactamente el museo?
-    - ¿En qué calle y avenida está el museo?
-    - ¿Cuál es la dirección exacta del museo en la ciudad?
-    - ¿Dónde se localiza el museo en el centro?
-    - ¿En qué dirección y zona se encuentra el museo?
-    - Quisiera obtener la ubicación detallada del museo.
-    - ¿Cuál es la dirección y número del museo?
-    - ¿Dónde está el museo en el mapa de la ciudad?
-    - ¿Cuál es la dirección postal y código del museo?
-    - ¿Dónde puedo encontrar el museo en la parte este de la ciudad?
-    - ¿Cuál es la dirección exacta del museo en la zona céntrica?
     - ¿Dónde se sitúa el museo?
 
 - intent: guiadas
@@ -840,7 +677,6 @@ nlu:
     - Información visitas guiadas
     - Guía
     - Reservar visita guiada
-    - ¿Hay recorridos con guía en el museo?
     - Quiero información sobre las visitas guiadas al museo.
     - ¿Puedo hacer una visita con guía en el museo?
     - ¿Cuál es el horario de las visitas guiadas en el museo?
@@ -930,34 +766,15 @@ nlu:
     - Número de visitantes
     - Número de visitantes al año
     - ¿Cuál es el número de visitantes anuales del museo?
-    - Quisiera saber la cifra de visitantes que recibe el museo al año.
+    - Quisiera saber la cifra de visitantes que recibe el museo al año
     - ¿El museo registra una gran afluencia de visitantes anualmente?
     - ¿Podrías darme información sobre la cantidad de personas que visitan el museo?
     - ¿Cuántos visitantes acuden al museo en un año promedio?
     - ¿El museo es popular y recibe muchas visitas al año?
     - ¿Cuál es la estadística de visitantes anuales del museo?
     - ¿El museo es uno de los destinos más visitados de la ciudad?
-    - ¿El museo ha experimentado un aumento en el número de visitantes en los últimos años?
     - ¿Cuántos turistas y locales visitan el museo cada año?
-    - ¿El museo se encuentra entre los museos más visitados a nivel nacional o internacional?
-    - ¿La cantidad de visitantes al año ha aumentado o disminuido en comparación con años anteriores?
-    - ¿El museo ha implementado estrategias para atraer a más visitantes?
-    - ¿Cuál es el récord de visitantes anuales del museo?
-    - ¿La cantidad de visitantes varía según las exposiciones o eventos especiales?
-    - ¿El museo ha realizado campañas de promoción para aumentar la cantidad de visitantes?
-    - ¿El museo ofrece descuentos o promociones para atraer a más personas?
-    - ¿Cuántos turistas extranjeros visitan el museo cada año?
-    - ¿El museo ha establecido alianzas con otras instituciones para aumentar la cantidad de visitantes?
-    - ¿La cantidad de visitantes anuales del museo es un indicador de su impacto cultural?
-    - ¿El museo ha realizado mejoras en sus instalaciones para recibir a más visitantes?
-    - ¿Cuántas personas en promedio visitan el museo en un día o mes?
-    - ¿La cantidad de visitantes anuales del museo refleja la relevancia de su colección y exposiciones?
     - ¿El museo cuenta con datos precisos sobre la cantidad de visitantes anuales?
-    - ¿La cantidad de visitantes al año afecta la calidad de la experiencia de los visitantes?
-    - ¿El museo ha implementado tecnologías o sistemas para contabilizar la cantidad de visitantes?
-    - ¿La cantidad de visitantes anuales del museo ha superado las expectativas de la institución?
-    - ¿El museo tiene previsiones de crecimiento en la cantidad de visitantes para los próximos años?
-    - ¿El museo ha recibido reconocimientos o premios por su cantidad de visitantes
 
 - intent: fotos
   examples: |
@@ -986,16 +803,10 @@ nlu:
     - ¿Existe alguna política sobre la fotografía en el museo?
     - ¿Puedo tomar fotos de las exposiciones en el museo?
     - ¿Se permite el uso de flash al hacer fotos en el museo?
-    - ¿Hay áreas específicas donde no se pueden hacer fotos en el museo?
     - ¿Puedo publicar las fotos del museo en redes sociales?
     - ¿Se permiten selfies?
     - ¿Puedo hacerme selfies?
     - Selfies
-    - ¿El museo tiene alguna política de derechos de autor para las fotografías tomadas?
-    - ¿Puedo solicitar permiso especial para tomar fotos en el museo con fines comerciales?
-    - ¿Existe algún límite de tiempo para tomar fotos en el museo?
-    - ¿El museo cuenta con personal que pueda responder preguntas sobre la fotografía?
-    - ¿Se permite el uso de trípodes o equipos profesionales de fotografía en el museo?
     - ¿Existen restricciones para tomar fotos dentro del museo?
     - ¿Se permite la grabación de videos en el museo?
 
@@ -1031,6 +842,7 @@ nlu:
     - ¿Hay restricciones en cuanto al uso de teléfonos móviles o dispositivos electrónicos en el museo?
     - ¿Se permite la entrada de mascotas o animales de compañía al museo?
     - Mascotas
+    - ¿Puedo tocar los cuadros?
     - Perros
     - Perros guía
     - Están permitidos los animales
@@ -1104,7 +916,6 @@ nlu:
     - Edificio
     - En qué edificio está el museo
     - Cual es el edificio del museo
-    - Hablame del museo
     - Qué historia tiene el edificio del museo?
     - De quién era el edificio del museo?
     - Quién vivió en el edificio donde está el museo?
@@ -1123,23 +934,14 @@ nlu:
     - ¿Cuál es la importancia histórica del edificio que aloja el museo?
     - ¿Hay alguna anécdota interesante sobre la construcción del edificio del museo?
     - ¿Qué estilos arquitectónicos se reflejan en el diseño del edificio del museo?
-    - ¿El edificio ha sido modificado o renovado a lo largo de los años?
     - ¿Cuál es la relación entre el edificio y la temática del museo?
     - ¿Qué funciones tuvo el edificio antes de convertirse en un museo?
-    - ¿Cuál es el significado cultural o simbólico del edificio que alberga el museo?
-    - ¿El edificio ha sido declarado patrimonio histórico o protegido por su valor arquitectónico?
     - ¿Cuál es la relación entre la ubicación del edificio y la temática del museo?
     - ¿El edificio ha sido utilizado con otros propósitos antes de convertirse en un museo?
-    - ¿Existen fotografías o documentos que muestren la evolución del edificio del museo a lo largo del tiempo?
-    - ¿Hay alguna historia interesante o anécdota relacionada con los antiguos propietarios del edificio del museo?
-    - ¿El edificio cuenta con características arquitectónicas únicas o elementos decorativos destacados?
-    - ¿Cuál es la relación entre la historia del edificio y las colecciones exhibidas en el museo?
-    - ¿La propiedad del edificio ha cambiado?
-    - Vida del edificio
+    - ¿La propiedad del edificio ha cambiado?.
     - Historia del museo
     - Cuándo abrió el museo
     - Inauguración del museo
-    - Vida del museo
     - Cuando abrió sus puertas el museo
     - En qué año se fundó el museo
     - Año de fundación del museo
@@ -1179,12 +981,7 @@ nlu:
     - ¿El museo pertenece a alguna institución cultural o educativa?
     - ¿Quién es el responsable legal del museo?
     - ¿Cuál es la relación del museo con el gobierno local o regional?
-    - ¿El museo ha recibido donaciones o legados de particulares?
-    - ¿El museo tiene autonomía en sus decisiones y gestión?
-    - ¿El museo ha pasado por cambios de propiedad en el pasado?
-    - ¿El museo es financiado en su totalidad por entidades públicas?
     - ¿Recibe el museo financiamiento de entidades privadas?
-    - ¿El museo depende de donaciones o patrocinios para su financiamiento?
     - ¿Cuál es la principal fuente de financiamiento del museo?
     - Financiación
     - Quién financia el museo
@@ -1217,7 +1014,7 @@ nlu:
   examples: |
     - ¿Qué cuadros hay en el museo?
     - Cuadros
-    - Qué ver
+    - Qué obras puedo ver
     - Qué cuadros hay?
     - Dime los cuadros del museo
     - Qué cuadros puedo ver?
@@ -1319,7 +1116,6 @@ nlu:
     - Quiero hacer la visita virtual
     - Cómo hago la visita virtual?
     - ¿Dónde accedo a la visita virtual?
-    - ¿Hay recorridos online?
     - ¿El museo tiene una experiencia virtual?
     - ¿Puedo explorar el museo de forma virtual?
     - ¿Existe una opción de visita virtual al museo?
@@ -1337,9 +1133,7 @@ nlu:
     - ¿El museo cuenta con una galería virtual en su página web?
     - ¿Puedo explorar las obras de arte del museo desde internet?
     - ¿Existe una herramienta de realidad virtual para visitar el museo?
-    - ¿El museo ofrece un recorrido interactivo en línea?
     - Realidad virtual
-    - Recorrido interactivo
 
 - intent: plano
   examples: |
@@ -1350,8 +1144,8 @@ nlu:
     - Mapa del museo
     - Plantas
     - ¿Cuántas plantas hay?
-    - Qué ver en cada planta
-    - Qué ver en cada piso
+    - Qué hay en cada planta
+    - Qué hay en cada piso
     - Pisos
     - Qué hay en cada piso?
     - ¿Cada planta está dedicada a una exposición diferente?
@@ -1417,8 +1211,6 @@ nlu:
     - Tomos de la revista
     - Publicaciones
     - Publicaciones del boletín
-    - ¿Dónde puedo encontrar las últimas ediciones del boletín informativo del museo?
-    - ¿Dónde puedo encontrar el archivo de ediciones anteriores del boletín informativo del museo?
 
 - intent: vida
   examples: |
@@ -1450,6 +1242,11 @@ nlu:
     - Resumen de su vida
     - Resumen de tu vida
     - Me puedes resumir la vida de Goya
+    - Háblame de Goya
+    - Bueno pues hablame de Goya
+    - Qué sabes de Goya
+    - Qué me puedes decir de goya
+    - Qué puedes decirme de goya?
 
 - intent: juventud
   examples: |
@@ -1660,6 +1457,8 @@ nlu:
     - Día de nacimiento
     - ¿Qué día nació?
     - Nacionalidad
+    - De dónde es Goya
+    - De donde es goya
     - Natalidad
 
 - intent: muerte
@@ -1667,7 +1466,9 @@ nlu:
     - ¿Cuándo murió Goya?
     - Muerte
     - Fallecimiento
+    - Cuando murio Goya
     - Cuándo fallece Goya
+    - Muerte de Goya
     - En qué fecha murió Goya
     - Día de la muerte de Goya
     - ¿Cuál es la fecha de fallecimiento de Goya?
@@ -2105,7 +1906,7 @@ nlu:
     - Grabados de la locura
     - Grabado tontería
     - Información sobre los disparates de Goya
-    . Me gustaría saber más sobre los disparates
+    - Me gustaría saber más sobre los disparates
     - Serie de grabados de los disparates
     - Colección de los disparates
 
@@ -2328,7 +2129,7 @@ nlu:
     - Máscaras
     - Danzantes
     - El arco
-    . Danzantes bajo el arco
+    - Danzantes bajo el arco
     - Bailarines
     - Los que bailan
     - Baile de máscaras
@@ -2377,3 +2178,19 @@ nlu:
     - [11](numero) adultos
     - Cuánto nos cuesta a [12](numero) adultos la entrada
     - Entradas para [13](numero) adultos
+
+- intent: otra_consulta
+  examples: |
+    - Otra consulta
+    - Una consulta diferente
+
+- intent: vale
+  examples: |
+    - Vale
+    - Ok
+    - De acuerdo
+    - Entiendo
+    - Ajam
+    - Entendido
+    - Okay
+    - Sí
