@@ -6,3 +6,8 @@ rules:
   steps:
   - intent: gracias
   - action: utter_gracias
+
+- rule: Devolver un fallback cuando no entiende
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
