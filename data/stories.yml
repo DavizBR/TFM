@@ -411,3 +411,41 @@ stories:
   steps:
   - intent: calcular
   - action: action_calcular_precio
+
+- story: Otra consulta
+  steps:
+  - intent: otra_consulta
+  - action: utter_otra_consulta
+
+- story: No fotos
+  steps:
+  - intent: normas
+  - action: utter_normas
+  - intent: fotos
+  - action: utter_no_fotos
+
+- story: No humano
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+  - intent: bot_challenge
+  - action: utter_no_humano
+
+- story: irse
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: adios
+  - action: utter_no_consulta
+  - intent: adios
+  - action: utter_irse
+
+- story: consultar algo
+  steps:
+  - intent: consulta
+  - action: utter_consulta
+
+- story: estar de acuerdo
+  steps:
+  - intent: vale
+  - action: utter_vale
